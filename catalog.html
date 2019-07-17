@@ -17,8 +17,8 @@
           <div class="menu__logo"><img class="menu__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип компании Мишка"></div>
           <button class="menu__toggle" type="button"><span class="visually-hidden"> Открыть меню</span> </button>
           <ul class="menu__sub-menu sub-menu">
-            <li class="sub-menu__item"><a class="sub-menu__item-link" href="#">Каталог товаров</a></li>
-            <li class="sub-menu__item"><a class="sub-menu__item-link" href="#">Вязание на заказ</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__item-link" href="catalog.html">Каталог товаров</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__item-link" href="form.html">Вязание на заказ</a></li>
             <li class="sub-menu__item"><a class="sub-menu__item-link sub-menu__item-link--search-icon" href="#">Поиск по сайту</a></li>
             <li class="sub-menu__item"><a class="sub-menu__item-link sub-menu__item-link--cart-icon" href="#">Корзина:<span class="cart-empty"> пока пуста</span></a></li>
           </ul>
@@ -27,69 +27,44 @@
     </header>
 
     <section class="catalog">
-      <div class="inner-title">
-        <h1 class="inner-title-h1 h1-title">Каталог товаров</h1>
-      </div>
-      <!-- Товар Зайчик -->
-      <div class="catalog__prod-wrapper catalog-wrapper">
-        <div class="catalog__photo-wrapper catalog-item">
-          <div class="catalog-item__image"><img class="catalog-item__image-src" src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик - фотография"></div>
-        </div>
-        <div class="catalog__info-wrapper">
-          <ul class="catalog__specific catalog-spec">
-            <li class="catalog-spec__item h3-title">Зайчик-попрыгайчик</li>
-            <li class="catalog-spec__item">Рост 30 см, вес 200 г</li>
-            <li class="catalog-spec__item"><span class="catalog-spec__item-price">1 200 руб.</span><button class="catalog-spec__buy-button catalog-spec__buy-button--cart-icon" type="button" name="button">Заказать</button></li>
+      <h1 class="catalog__title h1-title">Каталог товаров</h1>
+
+      <ul class="catalog-prod">
+        <!-- Товар Зайчик -->
+        <li class="catalog-prod__item">
+          <img class="catalog-prod__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик - фотография">
+          <ul class="prod-spec">
+            <li class="prod-spec__item">
+              <h3 class="h3-title">Зайчик-попрыгайчик</h3>
+            </li>
+            <li class="prod-spec__item">Рост 30 см, вес 200 г</li>
+            <li class="prod-spec__item"><span class="prod-spec__price">1 200 руб.</span><a class="prod-spec__buy-button prod-spec__buy-button--cart-icon" href="#">Заказать</a></li>
           </ul>
-        </div>
-      </div>
-      <!-- Товар Корзинка -->
-      <div class="catalog__prod-wrapper catalog-wrapper">
-        <div class="catalog__photo-wrapper catalog-item">
-          <div class="catalog-item__image"><img class="catalog-item__image-src" src="http://placehold.it/150x100" width="150" height="100" alt="Корзинка для белья - фотография"></div>
-        </div>
-        <div class="catalog__info-wrapper catalog-wrapper">
-          <ul class="catalog__specific catalog-spec">
-            <li class="catalog-spec__item h3-title">Корзинка для белья</li>
-            <li class="catalog-spec__item">Диаметр 15 см, высота 10 см</li>
-            <li class="catalog-spec__item"><span class="catalog-spec__item-price">690 руб.</span><button class="catalog-spec__buy-button catalog-spec__buy-button--cart-icon" type="button" name="button">Заказать</button></li>
+        </li>
+        <!-- Товар Корзинка -->
+        <li class="catalog-prod__item">
+          <img class="catalog-prod__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Корзинка для белья - фотография">
+          <ul class="prod-spec">
+            <li class="prod-spec__item">
+              <h3 class="h3-title">Корзинка для белья</h3>
+            </li>
+            <li class="prod-spec__item">Диаметр 15 см, высота 10 см</li>
+            <li class="prod-spec__item"><span class="prod-spec__price">1 200 руб.</span><a class="prod-spec__buy-button prod-spec__buy-button--cart-icon" href="#">Заказать</a></li>
           </ul>
-        </div>
-      </div>
-      <!-- Товар Большая Корзинка -->
-      <div class="catalog__prod-wrapper catalog-wrapper">
-        <div class="catalog__photo-wrapper catalog-item">
-          <div class="catalog-item__image"><img class="catalog-item__image-src" src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик - фотография"></div>
-        </div>
-        <div class="catalog__info-wrapper catalog-wrapper">
-          <ul class="catalog__specific catalog-spec">
-            <li class="catalog-spec__item h3-title">Большая корзинка для игрушек/li>
-            <li class="catalog-spec__item">Диаметр 30 см, высота 30 см</li>
-            <li class="catalog-spec__item"><span class="catalog-spec__item-price">1 500 руб.</span><button class="catalog-spec__buy-button catalog-spec__buy-button--cart-icon" type="button" name="button">Заказать</button></li>
+        </li>
+        <!-- Товар Большая Корзинка -->
+        <li class="catalog-prod__item">
+          <img class="catalog-prod__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Большая корзинка для игрушек - фотография">
+          <ul class="prod-spec">
+            <li class="prod-spec__item">
+              <h3 class="h3-title">Большая корзинка для игрушек</h3>
+            </li>
+            <li class="prod-spec__item">Диаметр 30 см, высота 30 см</li>
+            <li class="prod-spec__item"><span class="prod-spec__price">1 200 руб.</span><a class="prod-spec__buy-button prod-spec__buy-button--cart-icon" href="#">Заказать</a></li>
           </ul>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
-
-    <section class="produce">
-      <div class="produce__wrapper catalog-wrapper">
-        <div class="produce__title-wrapper">
-          <h3 class="produce__title h3-title produce__title--cam-icon">Процесс производства</h3>
-        </div>
-
-        <div class="produce__video-wrapper produce-video">
-          <img class="produce-video__screenshot" src="http://placehold.it/150x100" width="150" height="100" alt="Как мы производим свой товар - заставка видео">
-          <p class="produce-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-
-          <button class="produce-video__play cta-button" type="button" name="button">Заказать</button>
-        </div>
-      </div>
-
-
-
-    </section>
-
-
   </main>
 
   <footer class=" footer">
