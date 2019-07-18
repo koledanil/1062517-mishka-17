@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Мишка — товары ручной работы для дома</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+
+    <header class="main-header">
+      <div class="main-header__wrapper wrapper">
+        <nav class="menu">
+          <div class="menu__logo"><img class="menu__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип компании Мишка"></div>
+          <button class="menu__toggle" type="button"><span class="visually-hidden"> Открыть меню</span> </button>
+          <ul class="menu__sub-menu sub-menu">
+            <li class="sub-menu__item"><a class="sub-menu__item-link" href="catalog.html">Каталог товаров</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__item-link" href="form.html">Вязание на заказ</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__item-link sub-menu__item-link--search-icon" href="#">Поиск по сайту</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__item-link sub-menu__item-link--cart-icon" href="#">Корзина:<span class="cart-empty"> пока пуста</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="network">
+      <div class="inner-title">
+        <h1 class="inner-title-h1 h1-title">Каталог товаров</h1>
+      </div>
+      <p class="network__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+      <form class="network__form-wrapper" action="index.html" method="post">
+        <!-- Выбор типа изделия -->
+        <fieldset class="form-type">
+          <legend class="form-type___legend">Тип</legend>
+          <label class="form-type__label"><input class="form-type__radio" type="radio" name="type" value="interior" checked>Аксессуар для
+            интерьера</label>
+          <label class="form-type__label"><input class="form-type__radio" type="radio" name="type" value="interior" checked>Детская игрушка</label>
+        </fieldset>
+        <!-- Выбор цвета изделия -->
+        <fieldset class="form-color">
+          <legend class="form-color___legend">Цвет</legend>
+          <label class="form-color__label"><input class="form-color__checkbox" type="checkbox" name="type" value="white" checked>Белый</label>
+          <label class="form-color__label"><input class="form-color__checkbox" type="checkbox" name="type" value="grey" checked>Серый</label>
+          <label class="form-color__label"><input class="form-color__checkbox" type="checkbox" name="type" value="tiffany">&laquo;Тиффани&raquo;</label>
+          <label class="form-color__label"><input class="form-color__checkbox" type="checkbox" name="type" value="black">Черный</label>
+          <label class="form-color__label"><input class="form-color__checkbox" type="checkbox" name="type" value="pink">Розовый</label>
+          <label class="form-color__label"><input class="form-color__checkbox" type="checkbox" name="type" value="orange">Оранжевый</label>
+        </fieldset>
+        <!-- Ввод личных данных-->
+        <fieldset class="form-contacts">
+          <legend class="form-contacts___legend">Контактные данные</legend>
+          <label class="form-contacts__label"><input class="form-contacts__input" type="text" name="name" placeholder="Введите ваше имя*" required></label>
+          <label class="form-contacts__label"><input class="form-contacts__input" type="text" name="last-name" placeholder="Укажите вашу фамилию*" required></label>
+          <label class="form-contacts__label"><input class="form-contacts__input" type="text" name="last-name" placeholder="Отчество, если желаете"></label>
+          <label class="form-contacts__label"><input class="form-contacts__input" type="tel" name="last-name" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required></label>
+          <label class="form-contacts__label"><input class="form-contacts__input" type="email" name="last-name" placeholder="Ваш Email*" required></label>
+          <textarea class="form-contacts__textarea" name="order-cooment" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <sup>*</sup> Поля обязательны для заполнения
+        <button class="network__buy cta-button" type="button" name="button">Отправить заказ</button>
+      </form>
+    </section>
+
+    <footer class=" footer">
+      <ul class="footer__social social-list">
+        <li class="social-list__item"><a class="social-list__item-link social-list__item-link--instagram"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li class="social-list__item social-list__item--facebook"><a class="social-list__item-link social-list__item-link--facebook"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="social-list__item social-list__item--twitter"><a class="social-list__item-link social-list__item-link--twitter"><span class="visually-hidden">Твиттер</span></a></li>
+      </ul>
+
+      <div class="footer__created">
+        <p class="footer__created-text">Разработано<span class="visually-hidden">HTMLacademy.ru</span></p>
+        <p class="footer__created-logo">Лого svg</p>
+      </div>
+    </footer>
+
+  </main>
+</body>

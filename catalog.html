@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Мишка — товары ручной работы для дома</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <header class="main-header">
+      <div class="main-header__wrapper wrapper">
+        <nav class="menu">
+          <div class="menu__logo"><img class="menu__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип компании Мишка"></div>
+          <button class="menu__toggle" type="button"><span class="visually-hidden"> Открыть меню</span> </button>
+          <ul class="menu__sub-menu sub-menu">
+            <li class="sub-menu__item"><a class="sub-menu__item-link" href="catalog.html">Каталог товаров</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__item-link" href="form.html">Вязание на заказ</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__item-link sub-menu__item-link--search-icon" href="#">Поиск по сайту</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__item-link sub-menu__item-link--cart-icon" href="#">Корзина:<span class="cart-empty"> пока пуста</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="catalog">
+      <h1 class="catalog__title h1-title">Каталог товаров</h1>
+
+      <ul class="catalog-prod">
+        <!-- Товар Зайчик -->
+        <li class="catalog-prod__item">
+          <img class="catalog-prod__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик - фотография">
+          <ul class="prod-spec">
+            <li class="prod-spec__item">
+              <h3 class="h3-title">Зайчик-попрыгайчик</h3>
+            </li>
+            <li class="prod-spec__item">Рост 30 см, вес 200 г</li>
+            <li class="prod-spec__item"><span class="prod-spec__price">1 200 руб.</span><a class="prod-spec__buy-button prod-spec__buy-button--cart-icon" href="#">Заказать</a></li>
+          </ul>
+        </li>
+        <!-- Товар Корзинка -->
+        <li class="catalog-prod__item">
+          <img class="catalog-prod__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Корзинка для белья - фотография">
+          <ul class="prod-spec">
+            <li class="prod-spec__item">
+              <h3 class="h3-title">Корзинка для белья</h3>
+            </li>
+            <li class="prod-spec__item">Диаметр 15 см, высота 10 см</li>
+            <li class="prod-spec__item"><span class="prod-spec__price">1 200 руб.</span><a class="prod-spec__buy-button prod-spec__buy-button--cart-icon" href="#">Заказать</a></li>
+          </ul>
+        </li>
+        <!-- Товар Большая Корзинка -->
+        <li class="catalog-prod__item">
+          <img class="catalog-prod__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Большая корзинка для игрушек - фотография">
+          <ul class="prod-spec">
+            <li class="prod-spec__item">
+              <h3 class="h3-title">Большая корзинка для игрушек</h3>
+            </li>
+            <li class="prod-spec__item">Диаметр 30 см, высота 30 см</li>
+            <li class="prod-spec__item"><span class="prod-spec__price">1 200 руб.</span><a class="prod-spec__buy-button prod-spec__buy-button--cart-icon" href="#">Заказать</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class=" footer">
+    <ul class="footer__social social-list">
+      <li class="social-list__item"><a class="social-list__item-link social-list__item-link--instagram"><span class="visually-hidden">Инстаграм</span></a></li>
+      <li class="social-list__item social-list__item--facebook"><a class="social-list__item-link social-list__item-link--facebook"><span class="visually-hidden">Фейсбук</span></a></li>
+      <li class="social-list__item social-list__item--twitter"><a class="social-list__item-link social-list__item-link--twitter"><span class="visually-hidden">Твиттер</span></a></li>
+    </ul>
+
+    <div class="footer__created">
+      <p class="footer__created-text">Разработано<span class="visually-hidden">HTMLacademy.ru</span></p>
+      <p class="footer__created-logo">Лого svg</p>
+    </div>
+  </footer>
+
+</body>
