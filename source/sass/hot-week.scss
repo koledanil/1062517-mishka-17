@@ -1,0 +1,123 @@
+.hot {
+  display: flex;
+  width: 320px;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+    background-color: white;
+}
+
+.hot__title {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.hot__subtitle {
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.hot__text {
+margin-bottom: 27px;
+padding: 0px;
+letter-spacing: -0.2px;
+}
+
+.hot-specific {
+  margin-bottom: 28px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hot-specific__row {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.hot-specific__cell {
+  padding-left: 15px;
+  height: 40px;
+}
+
+.hot__product-price {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+// Планшетная версия
+@media (min-width: $tablet-width) {
+.hot {
+  width: 768px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.hot__wrapper {
+  display: flex;
+  width: 768px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.aaa {
+  position: relative;
+  width: 100%;
+}
+
+.hot__title {
+  font-size: 43px;
+  width: 80%;
+}
+
+.hot__subtitle {
+  width: 15%;
+  box-sizing: border-box;
+  margin-bottom: 23px;
+  text-align: right;
+  line-height: 18px;
+}
+
+.hot-specific {
+  width: 290px;
+  margin-bottom: 65px;
+}
+
+.hot__text {
+width: 290px;
+position: relative;
+}
+
+.hot__image-product {
+  width: 333px;
+  height: 404px;
+  top: 15px;
+  right: 0px;
+  position: absolute;
+}
+
+.hot__product-price {
+  margin-top: 0px;
+  margin-bottom: 34px;
+  width: 290px;
+  font-size: 20px;
+}
+
+.hot__buy-button {
+  width: 290px;
+}
+
+.brake-line {
+  margin-bottom: 24px;
+  margin-top: 48px;
+
+  & svg{
+  width: 100%;
+  }
+}
+}

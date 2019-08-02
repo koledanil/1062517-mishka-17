@@ -1,0 +1,153 @@
+.reviews {
+  display: flex;
+  width: 320px;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.reviews__item {
+  margin: 0px;
+  padding: 0px;
+}
+
+.reviews__title {
+  margin: 0px;
+}
+
+.reviews__text {
+  line-height: 30px;
+  margin-bottom: -10px;
+}
+
+.reviews__text-p2 {
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+
+.reviews__author-name {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 3px;
+}
+
+.reviews__author-insta {
+  font-style: normal;
+}
+
+.reviews__next-back {
+  display: flex;
+  margin-top: 31px;
+}
+
+.next-back__back-button {
+  height: 52px;
+  width: 50%;
+  border: 1px solid #ececec;
+  background-color: white;
+  margin-bottom: 38px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+
+.next-back__next-button {
+  height: 52px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid #ececec;
+  border-left: none;
+  background-color: white;
+  margin-bottom: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviews__button {
+  margin: 0px;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Планшетная версия
+@media (min-width: $tablet-width) {
+
+.reviews {
+  width: 768px;
+  background-image: url("../img/review@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 350px 457px;
+  background-position: left top;
+  position: relative;
+  padding-top: 65px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.reviews__item {
+    margin-bottom: 36px;
+}
+
+.reviews__next-back {
+  position: absolute;
+  right: 0px;
+  top:0px;
+}
+
+.reviews__title {
+  font-size: 43px;
+  width: 70%;
+  margin-bottom: 65px;
+}
+
+.reviews__author {
+  position: relative;
+  display: block;
+}
+
+.reviews__next-back {
+  position: absolute;
+  width: 175px;
+  top:0px;
+  right: 0px;
+  margin-top: 0px;
+}
+
+.next-back__back-button,
+.next-back__next-button {
+  background-color: transparent;
+  border: none;
+}
+
+.reviews__button {
+  position: absolute;
+  top:55px;
+  right: 50px;
+  width: 175px;
+}
+
+.brake-line--review {
+  margin: 0px;
+  margin-top: 117px;
+  margin-bottom: 60px;
+}
+}

@@ -1,0 +1,379 @@
+.network {
+  background-color: white;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.network__form-wrapper {
+  display: flex;
+  width: 320px;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.network__title {
+  display: flex;
+  background-color: #f1f1f1;
+  height: 177px;
+  width: 320px;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.button-wrapper {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.network-text {
+  font-size: 13px;
+  line-height: 22px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.button__buy {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 23px;
+}
+
+.button__note {
+  margin-top: 10px;
+  margin-bottom: 22px;
+  font-size: 13px;
+  color: #444444;
+}
+
+
+// -------Форма - общее
+//Убирает стандартный дизйн филдестов (используется во всех частях данной формы)
+.form-wrapper,
+.form-type,
+.form-color,
+.form-color-input,
+.form-contacts {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+// Делает из divа c названием и линией флекс, чтобы линия тянулась (исп. во всех частях формы)
+.form-title-wrapper {
+  display: flex;
+}
+
+// Оформление названия формы (все части формы)
+.color-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#63d1bb;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+// Оформление линии (все части формы)
+.divider-line {
+  background-color: #63d1bb;
+  margin-top: 12px;
+  margin-left: 20px;
+  flex-grow: 1;
+  height: 1px;
+}
+
+// -------Форма - тип изделия
+// Далее идет оформление типа изделия
+.form-type__radio {
+  display: none;
+}
+
+//Делает радио выдел.
+#toy:checked ~ label[for="toy"]::before,
+#interior:checked ~ label[for="interior"]::before {
+  background-image: url("../img/icon-radio-on.svg");
+}
+
+.form-type__label {
+  font-weight: 700;
+  padding-bottom: 20px;
+  cursor: pointer;
+  margin-left: 60px;
+  position: relative;
+  line-height: 40px;
+
+&::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-radio-off.svg");
+  position: absolute;
+  cursor: pointer;
+  left:-60px;
+  top:0px;
+  }
+}
+
+// -------Форма - цвет изделия
+.form-color-input__checkbox {
+  display: none;
+}
+
+.form-color-input__label {
+  font-weight: 700;
+  padding-bottom: 20px;
+  cursor: pointer;
+  margin-left: 60px;
+  position: relative;
+  line-height: 40px;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-checkbox-off.svg");
+    position: absolute;
+    cursor: pointer;
+    left:-60px;
+    top:0px;
+    }
+}
+
+//Делает чекбокс выдел.
+#white-id:checked ~ label[for="white-id"]::before,
+#grey-id:checked ~ label[for="grey-id"]::before,
+#tiffany-id:checked ~ label[for="tiffany-id"]::before,
+#black-id:checked ~ label[for="black-id"]::before,
+#pink-id:checked ~ label[for="pink-id"]::before,
+#orange-id:checked ~ label[for="orange-id"]::before {
+  background-image: url("../img/icon-checkbox-on.svg");
+}
+
+// -------Форма - контакты
+.form-contacts__input {
+  height: 40px;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 24px;
+  width:100%;
+  background-color: transparent;
+}
+
+.form-contacts__label {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-contacts__textarea {
+  border: 2px solid #000000;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  line-height: 22px;
+  overflow: auto;
+  resize: vertical;
+  min-height: 142px;
+  max-height: 400px;
+}
+
+@media (min-width: $tablet-width) {
+
+.network__form-wrapper {
+  width: 100%;
+}
+
+.type-wrapper {
+  width: 768px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.form-wrapper{
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.form-type {
+  width: 440px;
+  margin-left: 100px;
+  margin-bottom: 29px;
+}
+
+.form-title-wrapper {
+  width: 100px;
+  padding-top: 11px;
+}
+
+.divider-line {
+  display: none;
+}
+
+.network__form-wrapper {
+  padding: 0px;
+}
+
+.network-text {
+  font-size: 16px;
+  padding-right: 60px;
+  line-height: 27px;
+  margin-bottom: 40px;
+}
+
+.form-grey-divider {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.form-color {
+  display: flex;
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.form-color-input {
+  margin-left: 100px;
+  width: 460px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.form-color-input__label {
+  width: 150px;
+}
+
+.form-user {
+  display: flex;
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form-contacts-input{
+  width: 490px;
+  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.form-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-contacts__label {
+  width: 100px;
+  line-height: 55px;
+}
+
+.form-contacts__input{
+  width:358px;
+  display: flex;
+}
+
+
+.credential {
+  width: 768px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form-contacts__input--long {
+margin-left: 100px;
+width: 460px;
+}
+
+.divider-form__legend--align-vertical {
+  margin-top: 17px;
+}
+
+.comments-area {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form-contacts__textarea {
+  margin-left: 100px;
+  width: 462px;
+}
+
+.button-wrapper {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.button__buy {
+  width: 230px;
+  margin-bottom: 48px;
+}
+
+.button__note {
+  width:50%;
+  text-align: right;
+  padding-right: 7px;
+ }
+}
