@@ -1,28 +1,28 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 // Глобальные стили
-@import 'global.scss';
+@import "global.scss";
 
 //Переменные
-@import 'varaiable.scss';
+@import "variable.scss";
 
 // index.html
-@import 'page.scss';
-@import 'fonts.scss';
-@import 'promo.scss';
-@import 'hot-week.scss';
-@import 'about-us.scss';
-@import 'reviews.scss';
-@import 'contacts.scss';
-@import 'footer.scss';
-@import 'popup.scss';
+@import "page.scss";
+@import "fonts.scss";
+@import "promo.scss";
+@import "hot-week.scss";
+@import "about-us.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "footer.scss";
+@import "popup.scss";
 
 //шапка сайта
-@import 'main-header.scss';
+@import "main-header.scss";
 
 // catalog.html
-@import 'catalog.scss';
-@import 'video.scss';
+@import "catalog.scss";
+@import "video.scss";
 
 
 // form.html
-@import 'network.scss';
+@import "network.scss";

@@ -38,23 +38,22 @@
 
           <ul class="menu-search-cart sub-menu">
             <li class="menu-search-cart__item border"><a class="sub-menu__item-link sub-menu__item-link--search-icon" href="#"><span class="sub-menu__item-text">Поиск по сайту</span></a></li>
-            <li class="menu-search-cart__item"><a class="sub-menu__item-link sub-menu__item-link--cart-icon" href="#">Корзина: <span class="cart-empty">пока пуста</span></a></li>
+            <li class="menu-search-cart__item"><a class="sub-menu__item-link sub-menu__item-link--cart-icon" href="#">Корзина:
+                <span class="cart-empty">пока пуста</span></a></li>
           </ul>
 
         </nav>
       </div>
     </header>
 
-
-
-
     <section class="network">
-      <h1 class="catalog__title h1-title">Вязание на заказ</h1>
+      <h1 class="inner-title h1-title">Вязание на заказ</h1>
 
 
       <form class="network__form-wrapper" action="index.html" method="post">
         <div class="type-wrapper">
-          <p class="network-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <p class="network-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+            детали.</p>
 
 
 
@@ -67,8 +66,8 @@
             </div>
 
             <div class="form-type">
-              <input class="form-type__radio" type="radio" name="type" value="toy" id="toy" checked>
-              <input class="form-type__radio" type="radio" name="type" value="interior" id="interior">
+              <input class="form-type__radio toy-radio" type="radio" name="type" value="toy" id="toy" checked>
+              <input class="form-type__radio interior-radio" type="radio" name="type" value="interior" id="interior">
               <label class="form-type__label" for="interior">Для интерьера</label>
               <label class="form-type__label" for="toy">Детские игрушки</label>
             </div>
@@ -87,12 +86,12 @@
             </div>
 
             <div class="form-color-input">
-              <input class="form-color-input__checkbox" type="checkbox" name="type" value="white" id="white-id" checked>
-              <input class="form-color-input__checkbox" type="checkbox" name="type" value="grey" id="grey-id" checked>
-              <input class="form-color-input__checkbox" type="checkbox" name="type" value="tiffany" id="tiffany-id">
-              <input class="form-color-input__checkbox" type="checkbox" name="type" value="black" id="black-id">
-              <input class="form-color-input__checkbox" type="checkbox" name="type" value="pink" id="pink-id">
-              <input class="form-color-input__checkbox" type="checkbox" name="type" value="orange" id="orange-id">
+              <input class="form-color-input__checkbox white-checkbox" type="checkbox" value="white" id="white-id" checked>
+              <input class="form-color-input__checkbox grey-checkbox" type="checkbox" value="grey" id="grey-id" checked>
+              <input class="form-color-input__checkbox tiffany-checkbox" type="checkbox" value="tiffany" id="tiffany-id">
+              <input class="form-color-input__checkbox black-checkbox" type="checkbox" value="black" id="black-id">
+              <input class="form-color-input__checkbox pink-checkbox" type="checkbox" value="pink" id="pink-id">
+              <input class="form-color-input__checkbox orange-checkbox" type="checkbox" value="orange" id="orange-id">
 
               <label class="form-color-input__label" for="white-id">Белый</label>
               <label class="form-color-input__label" for="grey-id">Серый</label>
@@ -112,19 +111,19 @@
 
 
             <div class="form-title-wrapper">
-              <span class="form-contacts__legend color-text">ФИО</span>
-              <span class="form-contacts__legend divider-line"></span>
+              <span class="form-title-wrapper__text color-text">ФИО</span>
+              <span class="form-title-wrapper__line  divider-line"></span>
             </div>
 
             <div class="form-contacts-input">
-              <label class="form-contacts__label" for="name-id">Имя:</label>
-              <input class="form-contacts__input" type="text" name="name" placeholder="Введите ваше имя*" required id="name-id">
+              <label class="form-contacts-input__label" for="name-id">Имя:</label>
+              <input class="contacts-input" type="text" name="name" placeholder="Введите ваше имя*" required id="name-id">
 
-              <label class="form-contacts__label" for="last-name-id">Фамилия:</label>
-              <input class="form-contacts__input" type="text" name="last-name" placeholder="Укажите вашу фамилию*" id="last-name-id" required>
+              <label class="form-contacts-input__label" for="last-name-id">Фамилия:</label>
+              <input class="contacts-input" type="text" name="last-name" placeholder="Укажите вашу фамилию*" id="last-name-id" required>
 
-              <label class="form-contacts__label" for="last-last-name-id">Отчество:</label>
-              <input class="form-contacts__input" type="text" name="last-name" placeholder="Отчество, если желаете" id="last-last-name-id">
+              <label class="form-contacts-input__label" for="last-last-name-id">Отчество:</label>
+              <input class="contacts-input" type="text" name="last-name" placeholder="Отчество, если желаете" id="last-last-name-id">
             </div>
           </div>
 
@@ -144,7 +143,7 @@
                     <span class="divider-form__legend color-text">Телефон</span>
                     <span class="divider-form__legend  divider-line"></span>
                   </div>
-                  <input class="form-contacts__input form-contacts__input--long" type="tel" name="last-name" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <input class="contacts-input contacts-input--long" type="tel" name="last-name" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </div>
 
                 <div class="divider-form form-wrapper">
@@ -152,7 +151,7 @@
                     <span class="divider-form__legend color-text">E-mail</span>
                     <span class="divider-form__legend divider-line"></span>
                   </div>
-                  <input class="form-contacts__input form-contacts__input--long" type="email" name="last-name" placeholder="Ваш Email*" required>
+                  <input class="contacts-input contacts-input--long" type="email" name="last-name" placeholder="Ваш Email*" required>
                 </div>
               </div>
             </div>
@@ -163,8 +162,10 @@
                 <span class="divider-form__legend color-text">Дополнительно</span>
                 <span class="divider-form__legend divider-line"></span>
               </div>
-              <textarea class="form-contacts__textarea" name="order-cooment" cols="11" placeholder="Опишите пожелания к заказу"></textarea>
+              <textarea class="form-contacts-textarea" name="order-cooment" cols="11" placeholder="Опишите пожелания к заказу"></textarea>
             </div>
+
+          </div>
         </fieldset>
 
         <div class="button-wrapper button">
@@ -194,7 +195,7 @@
               </g>
             </svg>
           </a></li>
-        <li class="social-list__item"><a class="social-list__item-link social-list__item-link--facebook" href="#"><span class="visually-hidden">Фейсбук</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <li class="social-list__item"><a class="social-list__item-link social-list__item-link--facebook" href="#"><span class="visually-hidden">Фейсбук</span><svg version="1.1" id="Layer_1asdas" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
               <g id="facebook">
                 <g>
@@ -204,7 +205,7 @@
               </g>
             </svg>
           </a></li>
-        <li class="social-list__item"><a class="social-list__item-link social-list__item-link--twitter" href="#"><span class="visually-hidden">Твиттер</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <li class="social-list__item"><a class="social-list__item-link social-list__item-link--twitter" href="#"><span class="visually-hidden">Твиттер</span><svg version="1.1" id="Layer_1gfgd" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
               <g id="twitter">
                 <g>
@@ -218,7 +219,7 @@
 
       <div class="footer__created">
         <p class="footer__created-text">Разработано<span class="visually-hidden">HTMLacademy.ru</span></p>
-        <p class="footer__created-logo"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
+        <p class="footer__created-logo"><svg version="1.1" id="Layer_1rew" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
             enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path
               d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
@@ -227,12 +228,6 @@
       </div>
     </div>
   </footer>
-
-
 </body>
 
-
-
-
 </html>
-<!-- конец -->

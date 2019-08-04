@@ -11,13 +11,13 @@
 }
 
 .about-us__title {
-  margin: 0px;
+  margin: 0;
 }
 
 .about-us__feature-list {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-weight: 700;
 }
@@ -34,43 +34,40 @@
 .features-list__item--support-icon,
 .features-list__item--box-icon {
   position: absolute;
-  top:-50px;
+  top: -50px;
 }
 
 
 //Планшетная версия
 
 @media (min-width: $tablet-width) {
+  .main-header {
+    width: 768px;
+  }
 
+  .menu__sub-menu {
+    width: 768px;
+  }
 
+  // Планшетная версия
+  .about-us {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
-.main-header {
-  width: 768px;
-}
+  .about-us__title {
+    width: 100%;
+    font-size: 43px;
+  }
 
-.menu__sub-menu{
-  width: 768px;
-}
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-// Планшетная версия
-.about-us {
-  width: 768px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.about-us__title {
-  width: 100%;
-  font-size: 43px;
-}
-
-.features-list {
-  display: flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-}
-
-.features-list__item {
-  width: 300px;
-}
+  .features-list__item {
+    width: 300px;
+  }
 }

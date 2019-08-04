@@ -1,6 +1,6 @@
 .network {
   background-color: white;
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -22,14 +22,13 @@
   background-color: #f1f1f1;
   height: 177px;
   width: 320px;
-  margin: 0px;
+  margin: 0;
   align-items: center;
   justify-content: center;
-  margin: auto;
 }
 
 .button-wrapper {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -41,8 +40,8 @@
 .network-text {
   font-size: 13px;
   line-height: 22px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
 }
 
@@ -59,7 +58,6 @@
   color: #444444;
 }
 
-
 // -------Форма - общее
 //Убирает стандартный дизйн филдестов (используется во всех частях данной формы)
 .form-wrapper,
@@ -68,8 +66,8 @@
 .form-color-input,
 .form-contacts {
   border: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -85,7 +83,7 @@
 .color-text {
   text-transform: uppercase;
   font-weight: 700;
-  color:#63d1bb;
+  color: #63d1bb;
   margin-bottom: 5px;
   font-size: 14px;
 }
@@ -106,8 +104,8 @@
 }
 
 //Делает радио выдел.
-#toy:checked ~ label[for="toy"]::before,
-#interior:checked ~ label[for="interior"]::before {
+.toy-radio:checked ~ label[for="toy"]::before,
+.interior-radio:checked ~ label[for="interior"]::before {
   background-image: url("../img/icon-radio-on.svg");
 }
 
@@ -119,15 +117,15 @@
   position: relative;
   line-height: 40px;
 
-&::before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/icon-radio-off.svg");
-  position: absolute;
-  cursor: pointer;
-  left:-60px;
-  top:0px;
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-radio-off.svg");
+    position: absolute;
+    cursor: pointer;
+    left: -60px;
+    top: 0;
   }
 }
 
@@ -151,39 +149,39 @@
     background-image: url("../img/icon-checkbox-off.svg");
     position: absolute;
     cursor: pointer;
-    left:-60px;
-    top:0px;
-    }
+    left: -60px;
+    top: 0;
+  }
 }
 
 //Делает чекбокс выдел.
-#white-id:checked ~ label[for="white-id"]::before,
-#grey-id:checked ~ label[for="grey-id"]::before,
-#tiffany-id:checked ~ label[for="tiffany-id"]::before,
-#black-id:checked ~ label[for="black-id"]::before,
-#pink-id:checked ~ label[for="pink-id"]::before,
-#orange-id:checked ~ label[for="orange-id"]::before {
+.white-checkbox:checked ~ label[for="white-id"]::before,
+.grey-checkbox:checked ~ label[for="grey-id"]::before,
+.tiffany-checkbox:checked ~ label[for="tiffany-id"]::before,
+.black-checkbox:checked ~ label[for="black-id"]::before,
+.pink-checkbox:checked ~ label[for="pink-id"]::before,
+.orange-checkbox:checked ~ label[for="orange-id"]::before {
   background-image: url("../img/icon-checkbox-on.svg");
 }
 
 // -------Форма - контакты
-.form-contacts__input {
+.contacts-input {
   height: 40px;
   border-top: none;
-  border-left:none;
+  border-left: none;
   border-right: none;
   border-bottom: 2px solid #000000;
   margin-bottom: 24px;
-  width:100%;
+  width: 100%;
   background-color: transparent;
 }
 
-.form-contacts__label {
+.form-contacts-input__label {
   font-weight: 700;
   cursor: pointer;
 }
 
-.form-contacts__textarea {
+.form-contacts-textarea {
   border: 2px solid #000000;
   padding-top: 10px;
   padding-left: 10px;
@@ -197,183 +195,177 @@
 }
 
 @media (min-width: $tablet-width) {
+  .network__form-wrapper {
+    width: 100%;
+    padding: 0;
+  }
 
-.network__form-wrapper {
-  width: 100%;
-}
+  .type-wrapper {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
 
-.type-wrapper {
-  width: 768px;
-  padding-left: 50px;
-  padding-right: 50px;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
+  .form-wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
-.form-wrapper{
-  flex-wrap: wrap;
-  flex-direction: row;
+  .form-type {
+    width: 440px;
+    margin-left: 100px;
+    margin-bottom: 29px;
+  }
 
-}
+  .form-title-wrapper {
+    width: 100px;
+    padding-top: 11px;
+  }
 
-.form-type {
-  width: 440px;
-  margin-left: 100px;
-  margin-bottom: 29px;
-}
+  .divider-line {
+    display: none;
+  }
 
-.form-title-wrapper {
-  width: 100px;
-  padding-top: 11px;
-}
+  .network-text {
+    font-size: 16px;
+    padding-right: 60px;
+    line-height: 27px;
+    margin-bottom: 40px;
+  }
 
-.divider-line {
-  display: none;
-}
+  .form-grey-divider {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
 
-.network__form-wrapper {
-  padding: 0px;
-}
+  .form-color {
+    display: flex;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
-.network-text {
-  font-size: 16px;
-  padding-right: 60px;
-  line-height: 27px;
-  margin-bottom: 40px;
-}
+  .form-color-input {
+    margin-left: 100px;
+    width: 460px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.form-grey-divider {
-  width: 100%;
-  background-color: #f1f1f1;
-}
+  .form-color-input__label {
+    width: 150px;
+  }
 
-.form-color {
-  display: flex;
-  width: 768px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
+  .form-user {
+    display: flex;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.form-color-input {
-  margin-left: 100px;
-  width: 460px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  .form-contacts-input {
+    width: 490px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
-}
-.form-color-input__label {
-  width: 150px;
-}
+  .form-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.form-user {
-  display: flex;
-  width: 768px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  box-sizing: border-box;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+  .form-contacts-input__label {
+    width: 100px;
+    line-height: 55px;
+  }
 
-.form-contacts-input{
-  width: 490px;
-  margin-left: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-}
-
-.form-contacts {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.form-contacts__label {
-  width: 100px;
-  line-height: 55px;
-}
-
-.form-contacts__input{
-  width:358px;
-  display: flex;
-}
+  .contacts-input {
+    width: 358px;
+    display: flex;
+  }
 
 
-.credential {
-  width: 768px;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+  .credential {
+    width: 768px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.form-contacts__input--long {
-margin-left: 100px;
-width: 460px;
-}
+  .contacts-input--long {
+    margin-left: 100px;
+    width: 460px;
+  }
 
-.divider-form__legend--align-vertical {
-  margin-top: 17px;
-}
+  .divider-form__legend--align-vertical {
+    margin-top: 17px;
+  }
 
-.comments-area {
-  width: 768px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  box-sizing: border-box;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+  .comments-area {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.form-contacts__textarea {
-  margin-left: 100px;
-  width: 462px;
-}
+  .form-contacts-textarea {
+    margin-left: 100px;
+    width: 462px;
+  }
 
-.button-wrapper {
-  width: 768px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  box-sizing: border-box;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
+  .button-wrapper {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 
-.button__buy {
-  width: 230px;
-  margin-bottom: 48px;
-}
+  .button__buy {
+    width: 230px;
+    margin-bottom: 48px;
+  }
 
-.button__note {
-  width:50%;
-  text-align: right;
-  padding-right: 7px;
- }
+  .button__note {
+    width: 50%;
+    text-align: right;
+    padding-right: 7px;
+  }
 }
