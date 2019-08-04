@@ -55,25 +55,26 @@
           <p class="network-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
             детали.</p>
 
-
-
           <!-- Выбор типа изделия -->
           <fieldset class="form-wrapper">
+            <div class="form-color">
 
-            <div class="form-type-info form-title-wrapper">
-              <span class="form-type-info__legend color-text">Тип</span>
-              <span class="form-type-info__legend divider-line"></span>
+              <div class="form-color-info form-title-wrapper">
+                <span class="color-text">Тип</span>
+                <span class="divider-line"></span>
+              </div>
+
+              <div class="form-color-input">
+                <input class="form-color-input__radio toy-radio" type="radio" name="type" value="toy" id="toy" checked>
+                <input class="form-color-input__radio interior-radio" type="radio" name="type" value="interior" id="interior">
+                <label class="form-type__label" for="interior">Для интерьера</label>
+                <label class="form-type__label" for="toy">Детские игрушки</label>
+              </div>
             </div>
-
-            <div class="form-type">
-              <input class="form-type__radio toy-radio" type="radio" name="type" value="toy" id="toy" checked>
-              <input class="form-type__radio interior-radio" type="radio" name="type" value="interior" id="interior">
-              <label class="form-type__label" for="interior">Для интерьера</label>
-              <label class="form-type__label" for="toy">Детские игрушки</label>
-            </div>
-
 
           </fieldset>
+
+
         </div>
 
         <!-- Выбор цвета изделия -->
@@ -81,8 +82,8 @@
           <div class="form-color">
 
             <div class="form-color-info form-title-wrapper">
-              <span class="form-color-info__legend  color-text">Цвет</span>
-              <span class="form-color-info__legend divider-line"></span>
+              <span class="color-text">Цвет</span>
+              <span class="divider-line"></span>
             </div>
 
             <div class="form-color-input">
