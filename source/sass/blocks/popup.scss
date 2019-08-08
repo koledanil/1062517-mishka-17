@@ -15,6 +15,9 @@
 }
 
 .cart-popup__button {
+  background-color: #63d1bb;
+  border: 2px solid #63d1bb;
+  color: white;
   width: 100%;
 }
 
@@ -47,12 +50,6 @@
   font-weight: 700;
   border: 2px solid #ececec;
   margin-bottom: 30px;
-}
-
-.cart-popup__button {
-  background-color: #63d1bb;
-  border: 2px solid #63d1bb;
-  color: white;
 }
 
 //планшетная версия
