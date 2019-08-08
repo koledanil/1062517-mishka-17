@@ -21,33 +21,17 @@
   color: #63d1bb;
 }
 
-.hot__text {
-  margin-bottom: 27px;
-  padding: 0;
-  letter-spacing: -0.2px;
-}
-
-.hot-specific {
-  margin-bottom: 28px;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.hot-specific__row {
-  border-bottom: 1px solid #ececec;
-}
-
-.hot-specific__cell {
-  padding-left: 15px;
-  height: 40px;
-}
-
 .hot__product-price {
   display: block;
   width: 100%;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+
+.hot__image-product {
+  display: block;
+  background-color: #f1f1f1;
 }
 
 // Планшетная версия
@@ -65,11 +49,6 @@
     justify-content: space-between;
   }
 
-  .aaa {
-    position: relative;
-    width: 100%;
-  }
-
   .hot__title {
     font-size: 43px;
     width: 80%;
@@ -81,16 +60,6 @@
     margin-bottom: 23px;
     text-align: right;
     line-height: 18px;
-  }
-
-  .hot-specific {
-    width: 290px;
-    margin-bottom: 65px;
-  }
-
-  .hot__text {
-    width: 290px;
-    position: relative;
   }
 
   .hot__image-product {

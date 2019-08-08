@@ -1,0 +1,17 @@
+.network-form-wrapper {
+  display: flex;
+  width: 320px;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .network-form-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+}

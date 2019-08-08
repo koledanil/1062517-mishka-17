@@ -1,23 +1,4 @@
-
-.main-header {
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-
-
-.main-header__wrapper {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: nowrap;
-  width: 100%;
-}
-
 .main-menu-wrapper {
-
-  // padding-left: 30px;
-  // padding-right: 30px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -30,6 +11,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu__logo-image {
+  background-color: #f1f1f1;
 }
 
 .menu-functional {
@@ -124,27 +109,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-header {
-    position: absolute;
-    width: 100%;
-    border-bottom: 1px solid #ececec;
-    z-index: 999999;
-    margin: 0;
-    padding: 0;
-  }
-
-  .main-menu-wrapper {
-    width: 768px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 80px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-sizing: border-box;
-  }
-
   .menu {
     height: 79px;
     align-items: center;

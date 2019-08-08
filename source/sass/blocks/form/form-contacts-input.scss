@@ -1,0 +1,19 @@
+.form-contacts-input__label {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts-input {
+    width: 490px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .form-contacts-input__label {
+    width: 100px;
+    line-height: 42px;
+  }
+}

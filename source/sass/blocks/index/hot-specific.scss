@@ -1,0 +1,21 @@
+.hot-specific {
+  margin-bottom: 28px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hot-specific__row {
+  border-bottom: 1px solid #ececec;
+}
+
+.hot-specific__cell {
+  padding-left: 15px;
+  height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .hot-specific {
+    width: 290px;
+    margin-bottom: 65px;
+  }
+}

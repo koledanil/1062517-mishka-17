@@ -22,34 +22,8 @@
   font-weight: 700;
 }
 
-.features-list__item {
-  margin-top: 85px;
-  position: relative;
-}
-
-.features-list__item--eco-icon,
-.features-list__item--price-icon,
-.features-list__item--like-icon,
-.features-list__item--hand-icon,
-.features-list__item--support-icon,
-.features-list__item--box-icon {
-  position: absolute;
-  top: -130px;
-}
-
-
 //Планшетная версия
-
 @media (min-width: $tablet-width) {
-  .main-header {
-    width: 768px;
-  }
-
-  .menu__sub-menu {
-    width: 768px;
-  }
-
-  // Планшетная версия
   .about-us {
     width: 768px;
     padding-left: 50px;
@@ -59,15 +33,5 @@
   .about-us__title {
     width: 100%;
     font-size: 43px;
-  }
-
-  .features-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .features-list__item {
-    width: 300px;
   }
 }

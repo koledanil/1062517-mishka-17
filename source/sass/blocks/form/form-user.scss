@@ -1,0 +1,15 @@
+
+@media (min-width: $tablet-width) {
+  .form-user {
+    width: 768px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

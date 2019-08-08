@@ -1,0 +1,16 @@
+.form-wrapper {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  fieldset .form-wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}

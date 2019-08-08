@@ -1,0 +1,48 @@
+.form-color-input__checkbox {
+  display: none;
+}
+
+.form-color-input__label {
+  font-weight: 700;
+  padding-bottom: 20px;
+  cursor: pointer;
+  margin-left: 60px;
+  position: relative;
+  line-height: 40px;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-checkbox-off.svg");
+    position: absolute;
+    cursor: pointer;
+    left: -60px;
+    top: 0;
+  }
+}
+
+//Делает чекбокс выдел.
+.white-checkbox:checked ~ label[for="white-id"]::before,
+.grey-checkbox:checked ~ label[for="grey-id"]::before,
+.tiffany-checkbox:checked ~ label[for="tiffany-id"]::before,
+.black-checkbox:checked ~ label[for="black-id"]::before,
+.pink-checkbox:checked ~ label[for="pink-id"]::before,
+.orange-checkbox:checked ~ label[for="orange-id"]::before {
+  background-image: url("../img/icon-checkbox-on.svg");
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-color-input {
+    margin-left: 100px;
+    width: 460px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-color-input__label {
+    width: 150px;
+  }
+}

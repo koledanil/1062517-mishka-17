@@ -1,0 +1,18 @@
+.catalog {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+//планшетная версия
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 100%;
+    height: 100%;
+  }
+
+}

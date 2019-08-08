@@ -1,28 +1,54 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-// Глобальные стили
-@import "global.scss";
-
 //Переменные
 @import "variable.scss";
-
-// index.html
-@import "page.scss";
+// Глобальные стили
+@import "global.scss";
+@import "blocks/inner-title.scss"; //------------------------новый
 @import "fonts.scss";
-@import "promo.scss";
-@import "hot-week.scss";
-@import "about-us.scss";
-@import "reviews.scss";
-@import "contacts.scss";
-@import "footer.scss";
-@import "popup.scss";
-
-//шапка сайта
-@import "main-header.scss";
-
+// index.html
+@import "blocks/page.scss";
+@import "blocks/index/promo.scss"; // никаких изменений делать не надо
+@import "blocks/index/hot-week.scss"; // обработан
+@import "blocks/index/hot-specific.scss"; //------------------------новый
+@import "blocks/index/hot-container.scss"; //------------------------новый
+@import "blocks/index/about-us.scss"; // обработан
+@import "blocks/index/features-list.scss"; //------------------------новый
+@import "blocks/index/reviews.scss"; // обработан
+@import "blocks/index/next-back.scss"; //------------------------новый
+@import "blocks/index/contacts.scss"; // никаких изменений делать не надо
+@import "blocks/index/footer-wrapper.scss";  //------------------------новый
+@import "blocks/index/social-list.scss";  //------------------------новый
+@import "blocks/index/footer-logo.scss";  //------------------------новый
+@import "blocks/index/footer.scss"; // обработан
+@import "blocks/popup.scss"; // никаких изменений делать не надо
+//шапка сайта и меню на всех страницах
+@import "blocks/main-header.scss"; // обработан
+@import "blocks/menu.scss"; //------------------------новый
 // catalog.html
-@import "catalog.scss";
-@import "video.scss";
-
-
+@import "blocks/catalog/catalog.scss"; // обработан
+@import "blocks/catalog/prod-spec.scss"; //------------------------новый
+@import "blocks/catalog/prod-info.scss"; //------------------------новый
+@import "blocks/catalog/video.scss"; // обработан
+@import "blocks/catalog/video-info.scss"; //------------------------новый
 // form.html
-@import "network.scss";
+@import "blocks/form/network.scss"; // обработан
+@import "blocks/form/form-wrapper.scss"; //------------------------новый
+@import "blocks/form/button-form.scss"; //------------------------новый
+@import "blocks/form/form-title-wrapper.scss"; //------------------------новый
+@import "blocks/form/color-text.scss"; //------------------------новый
+@import "blocks/form/divider-line.scss"; //------------------------новый
+@import "blocks/form/type-form.scss"; //------------------------новый
+@import "blocks/form/form-color.scss"; //------------------------новый
+@import "blocks/form/toy-radio.scss"; //------------------------новый
+@import "blocks/form/interior-radio.scss"; //------------------------новый
+@import "blocks/form/form-grey-divider.scss"; //------------------------новый
+@import "blocks/form/form-type-input.scss"; //------------------------новый
+@import "blocks/form/form-color-input.scss"; //------------------------новый
+@import "blocks/form/contacts-input.scss"; //------------------------новый
+@import "blocks/form/form-contacts-textarea.scss"; //------------------------новый
+@import "blocks/form/form-contacts-input.scss"; //------------------------новый
+@import "blocks/form/tagline.scss"; //------------------------новый
+@import "blocks/form/network-form-wrapper.scss"; //------------------------новый
+@import "blocks/form/form-user.scss"; //------------------------новый
+@import "blocks/form/credential.scss"; //------------------------новый
+@import "blocks/form/comments-area.scss"; //------------------------новый

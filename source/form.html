@@ -10,7 +10,6 @@
 </head>
 
 <body class="page">
-
   <main>
     <header class="main-header">
       <div class="main-header__wrapper">
@@ -29,71 +28,58 @@
               </svg>
             </button>
           </div>
-
           <ul class="menu-functional sub-menu">
             <li class="sub-menu__item"><a class="sub-menu__item-link" href="catalog.html">Каталог товаров</a></li>
             <li class="sub-menu__item"><a class="sub-menu__item-link" href="form.html">Вязание на заказ</a></li>
             <li class="sub-menu__ad">Бесплатная доставка по России</li>
           </ul>
-
           <ul class="menu-search-cart sub-menu">
             <li class="menu-search-cart__item border"><a class="sub-menu__item-link sub-menu__item-link--search-icon" href="#"><span class="sub-menu__item-text">Поиск по сайту</span></a></li>
             <li class="menu-search-cart__item"><a class="sub-menu__item-link sub-menu__item-link--cart-icon" href="#">Корзина:
                 <span class="cart-empty">пока пуста</span></a></li>
           </ul>
-
         </nav>
       </div>
     </header>
-
     <section class="network">
       <h1 class="inner-title h1-title">Вязание на заказ</h1>
-
-
-      <form class="network__form-wrapper" action="index.html" method="post">
-        <div class="type-wrapper">
-          <p class="network-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+      <form class="network-form-wrapper" action="index.html" method="post">
+        <div class="tagline">
+          <p class="tagline__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
             детали.</p>
 
           <!-- Выбор типа изделия -->
           <fieldset class="form-wrapper">
-            <div class="form-color">
-
+            <div class="type-form">
               <div class="form-color-info form-title-wrapper">
                 <span class="color-text">Тип</span>
                 <span class="divider-line"></span>
               </div>
 
-              <div class="form-color-input">
-                <input class="form-color-input__radio toy-radio" type="radio" name="type" value="toy" id="toy" checked>
-                <input class="form-color-input__radio interior-radio" type="radio" name="type" value="interior" id="interior">
-                <label class="form-type__label" for="interior">Для интерьера</label>
-                <label class="form-type__label" for="toy">Детские игрушки</label>
+              <div class="form-type-input form-wrapper">
+                <input class="form-type-input__radio display-none toy-radio" type="radio" name="type" value="toy" id="toy" checked>
+                <input class="form-type-input__radio display-none interior-radio" type="radio" name="type" value="interior" id="interior">
+                <label class="form-type-input__label" for="interior">Для интерьера</label>
+                <label class="form-type-input__label" for="toy">Детские игрушки</label>
               </div>
             </div>
-
           </fieldset>
-
-
         </div>
 
         <!-- Выбор цвета изделия -->
         <fieldset class="form-grey-divider form-wrapper">
-          <div class="form-color">
-
+          <div class="color-form form-wrapper">
             <div class="form-color-info form-title-wrapper">
               <span class="color-text">Цвет</span>
               <span class="divider-line"></span>
             </div>
-
-            <div class="form-color-input">
+            <div class="form-color-input form-wrapper">
               <input class="form-color-input__checkbox white-checkbox" type="checkbox" value="white" id="white-id" checked>
               <input class="form-color-input__checkbox grey-checkbox" type="checkbox" value="grey" id="grey-id" checked>
               <input class="form-color-input__checkbox tiffany-checkbox" type="checkbox" value="tiffany" id="tiffany-id">
               <input class="form-color-input__checkbox black-checkbox" type="checkbox" value="black" id="black-id">
               <input class="form-color-input__checkbox pink-checkbox" type="checkbox" value="pink" id="pink-id">
               <input class="form-color-input__checkbox orange-checkbox" type="checkbox" value="orange" id="orange-id">
-
               <label class="form-color-input__label" for="white-id">Белый</label>
               <label class="form-color-input__label" for="grey-id">Серый</label>
               <label class="form-color-input__label" for="tiffany-id">&laquo;Тиффани&raquo;</label>
@@ -102,15 +88,11 @@
               <label class="form-color-input__label" for="orange-id">Оранжевый</label>
             </div>
           </div>
-
         </fieldset>
 
-
+        <!-- Данные пользователя -->
         <fieldset class="form-wrapper">
           <div class="form-user">
-
-
-
             <div class="form-title-wrapper">
               <span class="form-title-wrapper__text color-text">ФИО</span>
               <span class="form-title-wrapper__line  divider-line"></span>
@@ -128,15 +110,8 @@
             </div>
           </div>
 
-
-
-
-
-
-
-
+          <!-- Контакты пользователя -->
           <div class="divider-form form-wrapper">
-
             <div class="form-grey-divider">
               <div class="credential">
                 <div class="divider-form form-wrapper">
@@ -146,7 +121,6 @@
                   </div>
                   <input class="contacts-input contacts-input--long" type="tel" name="last-name" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </div>
-
                 <div class="divider-form form-wrapper">
                   <div class="divider-form form-title-wrapper ">
                     <span class="divider-form__legend color-text">E-mail</span>
@@ -157,24 +131,20 @@
               </div>
             </div>
 
+            <!-- Комент к заказу -->
             <div class="comments-area form-wrapper">
-
               <div class="divider-form form-title-wrapper">
                 <span class="divider-form__legend color-text">Дополнительно</span>
                 <span class="divider-form__legend divider-line"></span>
               </div>
               <textarea class="form-contacts-textarea" name="order-cooment" cols="11" placeholder="Опишите пожелания к заказу"></textarea>
             </div>
-
           </div>
         </fieldset>
-
-        <div class="button-wrapper button">
-          <div class="button__note"><sup>*</sup> Поля обязательны для заполнения</div>
-          <button class="button__buy cta-button" type="button" name="button">Отправить заказ</button>
+        <div class="button-form">
+          <div class="button-form__note"><sup>*</sup> Поля обязательны для заполнения</div>
+          <button class="button-form__buy cta-button" type="button" name="button">Отправить заказ</button>
         </div>
-
-
       </form>
     </section>
   </main>
@@ -184,7 +154,6 @@
       <div class="footer-logo">
         <img class="footer-logo__image" src="../source/img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка">
       </div>
-
       <ul class="footer__social social-list">
         <li class="social-list__item"><a class="social-list__item-link social-list__item-link--instagram" href="#"><span class="visually-hidden">Инстаграм</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
@@ -217,7 +186,6 @@
             </svg>
           </a></li>
       </ul>
-
       <div class="footer__created">
         <p class="footer__created-text">Разработано<span class="visually-hidden">HTMLacademy.ru</span></p>
         <p class="footer__created-logo"><svg version="1.1" id="Layer_1rew" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"

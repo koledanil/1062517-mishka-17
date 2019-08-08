@@ -1,0 +1,14 @@
+
+// Делает из divа c названием и линией флекс, чтобы линия тянулась (исп. во всех частях формы)
+.form-title-wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-title-wrapper {
+    width: 100px;
+    padding-top: 11px;
+  }
+}

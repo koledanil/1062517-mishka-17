@@ -49,13 +49,13 @@
   margin-bottom: 30px;
 }
 
-.cta-button.cta-button--filled {
+.cart-popup__button {
   background-color: #63d1bb;
   border: 2px solid #63d1bb;
   color: white;
 }
 
-
+//планшетная версия
 @media (min-width: $tablet-width) {
   .cart-popup {
     padding-left: 121px;

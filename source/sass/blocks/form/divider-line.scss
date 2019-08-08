@@ -1,0 +1,16 @@
+// Оформление линии (все части формы)
+.divider-line {
+  background-color: #63d1bb;
+  margin-top: 12px;
+  margin-left: 20px;
+  flex-grow: 1;
+  height: 1px;
+  width: 100%;
+
+}
+
+@media (min-width: $tablet-width) {
+  .divider-line {
+    display: none;
+  }
+}

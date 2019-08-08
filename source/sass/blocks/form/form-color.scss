@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .color-form {
+    display: flex;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
