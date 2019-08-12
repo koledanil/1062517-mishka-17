@@ -17,3 +17,9 @@
     line-height: 42px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-contacts-input {
+    width: 790px;
+  }
+}

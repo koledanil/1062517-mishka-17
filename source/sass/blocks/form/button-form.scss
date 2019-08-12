@@ -44,3 +44,15 @@
     padding-right: 7px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .button-form {
+    width: 1150px;
+    padding-left: 250px;
+  }
+
+  .button-form__note {
+    padding-right: 96px;
+  }
+}

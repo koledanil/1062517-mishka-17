@@ -10,3 +10,9 @@
     padding-bottom: 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comments-area {
+    width: 1150px;
+  }
+}

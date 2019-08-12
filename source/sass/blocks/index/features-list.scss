@@ -1,6 +1,7 @@
 .features-list__item {
   margin-top: 85px;
   position: relative;
+  line-height: 24px;
 }
 
 .features-list__item--eco-icon,
@@ -22,5 +23,11 @@
 
   .features-list__item {
     width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-list__item {
+    width: 250px;
   }
 }

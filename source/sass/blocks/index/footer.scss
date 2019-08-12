@@ -59,3 +59,10 @@
     border-top: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: 1150px;
+    height: 143px;
+  }
+}

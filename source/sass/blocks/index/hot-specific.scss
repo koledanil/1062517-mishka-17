@@ -19,3 +19,10 @@
     margin-bottom: 65px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hot-specific {
+    margin-left: 176px;
+    margin-bottom: 148px;
+  }
+}

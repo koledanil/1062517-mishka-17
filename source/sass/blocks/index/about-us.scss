@@ -35,3 +35,24 @@
     font-size: 43px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-us__title {
+    width: 100%;
+    font-size: 53px;
+    line-height: 52px;
+    margin-left: 175px;
+  }
+
+  .about-us__feature-list {
+    margin-left: 175px;
+    margin-right: 300px;
+  }
+}

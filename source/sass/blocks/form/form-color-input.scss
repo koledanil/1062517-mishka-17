@@ -46,3 +46,13 @@
     width: 150px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-color-input {
+    width: 800px;
+  }
+
+  .form-color-input__label {
+    width: 150px;
+  }
+}

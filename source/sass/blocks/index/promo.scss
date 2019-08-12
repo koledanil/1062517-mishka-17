@@ -13,7 +13,6 @@
   background-position: center;
   height: 373px;
   width: 320px;
-  background-color: #fafafa;
   position: relative;
   margin-bottom: 114px;
 }
@@ -96,7 +95,6 @@
 
   .promo__wrapper {
     width: 100%;
-
     background-color: #fafafa;
     background-image: url("../img/hero-tablet@1x.jpg");
     height: 746px;
@@ -143,5 +141,29 @@
     font-size: 53px;
     line-height: 66px;
     margin-top: 145px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .promo__list-item {
+    width: 525px;
+    list-style: none;
+  }
+
+  .promo__list-link--light-icon::after {
+    top: 25px;
+    left: 440px;
+  }
+
+  .promo__list-link--block-icon::after {
+    top: 25px;
+    left: 430px;
   }
 }

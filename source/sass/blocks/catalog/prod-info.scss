@@ -36,3 +36,30 @@
     border-right: 1px solid #ececec;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .prod-info {
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .prod-info__photo-image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .prod-info__photo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 316px;
+  }
+
+  .prod-info__photo:last-child {
+    padding: 0;
+  }
+}

@@ -1,35 +1,46 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //Переменные
 @import "variable.scss";
+
 // Глобальные стили
 @import "global.scss";
 @import "blocks/inner-title.scss"; //------------------------новый
 @import "fonts.scss";
+@import "brake-line.scss";
+
 // index.html
-@import "blocks/page.scss";
 @import "blocks/index/promo.scss"; // никаких изменений делать не надо
-@import "blocks/index/hot-week.scss"; // обработан
+@import "blocks/index/hot.scss"; // обработан
 @import "blocks/index/hot-specific.scss"; //------------------------новый
 @import "blocks/index/hot-container.scss"; //------------------------новый
 @import "blocks/index/about-us.scss"; // обработан
 @import "blocks/index/features-list.scss"; //------------------------новый
 @import "blocks/index/reviews.scss"; // обработан
 @import "blocks/index/next-back.scss"; //------------------------новый
-@import "blocks/index/contacts.scss"; // никаких изменений делать не надо
+@import "blocks/index/contacts.scss"; // обработан
+@import "blocks/index/contacts-table.scss"; //------------------------новый
 @import "blocks/index/footer-wrapper.scss";  //------------------------новый
 @import "blocks/index/social-list.scss";  //------------------------новый
 @import "blocks/index/footer-logo.scss";  //------------------------новый
 @import "blocks/index/footer.scss"; // обработан
-@import "blocks/popup.scss"; // никаких изменений делать не надо
+@import "blocks/cart-popup.scss"; // никаких изменений делать не надо
 //шапка сайта и меню на всех страницах
+
 @import "blocks/main-header.scss"; // обработан
+@import "blocks/main-menu-wrapper.scss"; //------------------------новый
+@import "blocks/menu-functional.scss"; //------------------------новый
 @import "blocks/menu.scss"; //------------------------новый
+@import "blocks/menu-search-cart.scss"; //------------------------новый
+@import "blocks/menu-search-promo.scss"; //------------------------новый
+@import "blocks/sub-menu.scss"; //------------------------новый
+
 // catalog.html
 @import "blocks/catalog/catalog.scss"; // обработан
 @import "blocks/catalog/prod-spec.scss"; //------------------------новый
 @import "blocks/catalog/prod-info.scss"; //------------------------новый
 @import "blocks/catalog/video.scss"; // обработан
 @import "blocks/catalog/video-info.scss"; //------------------------новый
+
 // form.html
 @import "blocks/form/network.scss"; // обработан
 @import "blocks/form/form-wrapper.scss"; //------------------------новый
@@ -37,8 +48,8 @@
 @import "blocks/form/form-title-wrapper.scss"; //------------------------новый
 @import "blocks/form/color-text.scss"; //------------------------новый
 @import "blocks/form/divider-line.scss"; //------------------------новый
-@import "blocks/form/type-form.scss"; //------------------------новый
-@import "blocks/form/form-color.scss"; //------------------------новый
+@import "blocks/form/form-type.scss"; //------------------------новый
+@import "blocks/form/color-form.scss"; //------------------------новый
 @import "blocks/form/toy-radio.scss"; //------------------------новый
 @import "blocks/form/interior-radio.scss"; //------------------------новый
 @import "blocks/form/form-grey-divider.scss"; //------------------------новый

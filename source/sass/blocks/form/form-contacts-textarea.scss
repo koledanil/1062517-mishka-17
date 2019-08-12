@@ -17,3 +17,11 @@
     width: 462px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-contacts-textarea {
+    width: 752px;
+    min-height: 142px;
+    max-height: 400px;
+  }
+}

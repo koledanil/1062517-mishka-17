@@ -15,3 +15,16 @@
     position: relative;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hot-container {
+    position: static;
+    flex-wrap: wrap;
+    order: 3;
+  }
+
+  .hot-container__text {
+    width: 290px;
+    margin-left: 175px;
+  }
+}

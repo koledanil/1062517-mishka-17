@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border: 1px solid #ececec;
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .prod-spec__title {
@@ -44,20 +45,35 @@
 @media (min-width: $tablet-width) {
   .prod-spec {
     width: 334px;
-    height: 334px;
+    min-height: 334px;
     margin-bottom: 54px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 0;
   }
 
   .prod-spec__item-spec-size {
     background-color: white;
+    font-size: 15px;
   }
 
   .prod-spec__item-spec-price {
     margin: 0;
     padding: 0;
     border-top: 1px solid #ececec;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prod-info {
+    display: flex;
+  }
+
+  .prod-spec {
+    background-color: #ffffff;
+    width: 317px;
+    min-height: 220px;
+    margin-top: 0;
   }
 }

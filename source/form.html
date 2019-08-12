@@ -16,28 +16,41 @@
         <nav class="main-menu-wrapper">
 
           <div class="menu">
+
             <div class="menu__false"></div>
-            <a href="index.html">
-              <picture>
-                <source srcset="../source/img/logo-tablet.svg" media="(min-width: 768px)">
-                <img class="menu__logo-image" src="../source/img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка">
-              </picture>
-            </a>
+
+            <picture class="menu__logo">
+              <source srcset="../img/logo-desktop.svg" media="(min-width: 1150px)">
+              <source srcset="../img/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="menu__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка">
+            </picture>
+
             <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span><svg xmlns="http://www.w3.org/2000/svg" width="20.514" height="20.512" viewBox="0 0 20.514 20.512">
                 <path fill="#231F20" d="M20.513 1.414L19.099 0l-8.843 8.842L1.414 0 0 1.414l8.842 8.842L0 19.098l1.414 1.414 8.842-8.842 8.843 8.842 1.414-1.414-8.842-8.842z" />
               </svg>
             </button>
           </div>
+
           <ul class="menu-functional sub-menu">
             <li class="sub-menu__item"><a class="sub-menu__item-link" href="catalog.html">Каталог товаров</a></li>
             <li class="sub-menu__item"><a class="sub-menu__item-link" href="form.html">Вязание на заказ</a></li>
-            <li class="sub-menu__ad">Бесплатная доставка по России</li>
+
           </ul>
+
           <ul class="menu-search-cart sub-menu">
             <li class="menu-search-cart__item border"><a class="sub-menu__item-link sub-menu__item-link--search-icon" href="#"><span class="sub-menu__item-text">Поиск по сайту</span></a></li>
-            <li class="menu-search-cart__item"><a class="sub-menu__item-link sub-menu__item-link--cart-icon" href="#">Корзина:
-                <span class="cart-empty">пока пуста</span></a></li>
+            <li class="menu-search-cart__item"><a class="sub-menu__item-link sub-menu__item-link--cart-icon" href="#">Корзина: <span class="cart-empty">пока пуста</span></a></li>
           </ul>
+
+          <ul class="menu-search-promo sub-menu">
+            <li class="menu-search-cart__item">
+              <a class="sub-menu__item-link sub-menu__item-link--padding" href="#">Новые поступления</a>
+            </li>
+            <li class="stock-navigation__item">
+              <a class="sub-menu__item-link sub-menu__item-link--padding" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="menu__delivery">Бесплатная доставка по России</li>
         </nav>
       </div>
     </header>
@@ -67,7 +80,7 @@
         </div>
 
         <!-- Выбор цвета изделия -->
-        <fieldset class="form-grey-divider form-wrapper">
+        <fieldset class="form-wrapper form-wrapper--grey-divider">
           <div class="color-form form-wrapper">
             <div class="form-color-info form-title-wrapper">
               <span class="color-text">Цвет</span>
@@ -111,39 +124,39 @@
           </div>
 
           <!-- Контакты пользователя -->
-          <div class="divider-form form-wrapper">
-            <div class="form-grey-divider">
-              <div class="credential">
-                <div class="divider-form form-wrapper">
-                  <div class="divider-form form-title-wrapper ">
-                    <span class="divider-form__legend color-text">Телефон</span>
-                    <span class="divider-form__legend  divider-line"></span>
-                  </div>
-                  <input class="contacts-input contacts-input--long" type="tel" name="last-name" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <div class="divider-form">
+            <div class="form-wrapper form-wrapper--grey-divider"">
+              <div class=" credential">
+              <div class="divider-form form-wrapper">
+                <div class="divider-form form-title-wrapper ">
+                  <span class="divider-form__legend color-text">Телефон</span>
+                  <span class="divider-form__legend  divider-line"></span>
                 </div>
-                <div class="divider-form form-wrapper">
-                  <div class="divider-form form-title-wrapper ">
-                    <span class="divider-form__legend color-text">E-mail</span>
-                    <span class="divider-form__legend divider-line"></span>
-                  </div>
-                  <input class="contacts-input contacts-input--long" type="email" name="last-name" placeholder="Ваш Email*" required>
+                <input class="contacts-input contacts-input--long" type="tel" name="last-name" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              </div>
+              <div class="divider-form form-wrapper">
+                <div class="divider-form form-title-wrapper ">
+                  <span class="divider-form__legend color-text">E-mail</span>
+                  <span class="divider-form__legend divider-line"></span>
                 </div>
+                <input class="contacts-input contacts-input--long" type="email" name="last-name" placeholder="Ваш Email*" required>
               </div>
             </div>
+          </div>
 
-            <!-- Комент к заказу -->
-            <div class="comments-area form-wrapper">
-              <div class="divider-form form-title-wrapper">
-                <span class="divider-form__legend color-text">Дополнительно</span>
-                <span class="divider-form__legend divider-line"></span>
-              </div>
-              <textarea class="form-contacts-textarea" name="order-cooment" cols="11" placeholder="Опишите пожелания к заказу"></textarea>
+          <!-- Комент к заказу -->
+          <div class="comments-area form-wrapper">
+            <div class="divider-form form-title-wrapper">
+              <span class="divider-form__legend color-text">Дополнительно</span>
+              <span class="divider-form__legend divider-line"></span>
             </div>
+            <textarea class="form-contacts-textarea" name="order-cooment" cols="11" placeholder="Опишите пожелания к заказу"></textarea>
+          </div>
           </div>
         </fieldset>
         <div class="button-form">
           <div class="button-form__note"><sup>*</sup> Поля обязательны для заполнения</div>
-          <button class="button-form__buy cta-button" type="button" name="button">Отправить заказ</button>
+          <button type="submit" class="button-form__buy cta-button" type="button" name="button">Отправить заказ</button>
         </div>
       </form>
     </section>
@@ -188,7 +201,7 @@
       </ul>
       <div class="footer__created">
         <p class="footer__created-text">Разработано<span class="visually-hidden">HTMLacademy.ru</span></p>
-        <p class="footer__created-logo"><svg version="1.1" id="Layer_1rew" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
+        <p class="footer__created-logo"><svg version="1.1" id="Layer_1rew" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="34.09px" viewBox="0 0 26.943 34.09"
             enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path
               d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />

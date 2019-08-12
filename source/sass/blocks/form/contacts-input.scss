@@ -12,13 +12,24 @@
 
 @media (min-width: $tablet-width) {
   .contacts-input {
-    width: 358px;
+    width: 360px;
     display: flex;
   }
-
 
   .contacts-input--long {
     margin-left: 100px;
     width: 460px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-input {
+    width: 648px;
+    display: flex;
+  }
+
+  .contacts-input--long {
+    margin-left: 100px;
+    width: 750px;
   }
 }
