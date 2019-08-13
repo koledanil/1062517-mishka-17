@@ -1,0 +1,26 @@
+.video {
+  background-color: white;
+  width: 320px;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
+  margin: auto;
+  box-sizing: border-box;
+  padding-bottom: 55px;
+}
+
+//планшетная версия
+@media (min-width: $tablet-width) {
+  .video {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 1150px;
+  }
+}

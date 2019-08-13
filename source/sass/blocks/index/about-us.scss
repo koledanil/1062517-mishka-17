@@ -1,0 +1,58 @@
+.about-us {
+  display: flex;
+  width: 320px;
+  justify-content: center;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  padding-bottom: 65px;
+  background-color: white;
+}
+
+.about-us__title {
+  margin: 0;
+}
+
+.about-us__feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-weight: 700;
+}
+
+//Планшетная версия
+@media (min-width: $tablet-width) {
+  .about-us {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-us__title {
+    width: 100%;
+    font-size: 43px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-us__title {
+    width: 100%;
+    font-size: 53px;
+    line-height: 52px;
+    margin-left: 175px;
+  }
+
+  .about-us__feature-list {
+    margin-left: 175px;
+    margin-right: 300px;
+  }
+}

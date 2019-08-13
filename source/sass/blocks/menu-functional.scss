@@ -1,0 +1,34 @@
+.menu-functional {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-functional {
+    justify-content: flex-start;
+    order: 2;
+    padding: 0;
+    width: auto;
+  }
+
+  .menu-functional li {
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-functional {
+    width: 400px;
+    flex-direction: row;
+    order: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+
+  .menu-functional li {
+    margin-right: 0;
+  }
+}

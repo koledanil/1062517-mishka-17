@@ -1,0 +1,27 @@
+.form-contacts-textarea {
+  border: 2px solid #000000;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  line-height: 22px;
+  overflow: auto;
+  resize: vertical;
+  min-height: 142px;
+  max-height: 400px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts-textarea {
+    margin-left: 100px;
+    width: 462px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contacts-textarea {
+    width: 752px;
+    min-height: 142px;
+    max-height: 400px;
+  }
+}

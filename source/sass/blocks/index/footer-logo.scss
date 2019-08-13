@@ -1,0 +1,11 @@
+.footer-logo {
+  display: none;
+}
+
+//планшетная версия
+@media (min-width: $tablet-width) {
+  .footer-logo {
+    display: block;
+    width: 160px;
+  }
+}

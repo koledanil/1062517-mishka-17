@@ -1,0 +1,16 @@
+.menu-search-promo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-search-promo {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-search-promo {
+    display: flex;
+    order: 4;
+  }
+}

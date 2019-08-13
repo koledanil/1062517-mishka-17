@@ -1,0 +1,16 @@
+.main-menu-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu-wrapper {
+    width: 1150px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
