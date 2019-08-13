@@ -1,0 +1,30 @@
+.hot-container__text {
+  margin-bottom: 27px;
+  padding: 0;
+  letter-spacing: -0.2px;
+}
+
+@media (min-width: $tablet-width) {
+  .hot-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .hot-container__text {
+    width: 290px;
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hot-container {
+    position: static;
+    flex-wrap: wrap;
+    order: 3;
+  }
+
+  .hot-container__text {
+    width: 290px;
+    margin-left: 175px;
+  }
+}

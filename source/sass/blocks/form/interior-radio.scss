@@ -1,0 +1,3 @@
+.interior-radio:checked ~ label[for="interior"]::before {
+  background-image: url("../img/icon-radio-on.svg");
+}

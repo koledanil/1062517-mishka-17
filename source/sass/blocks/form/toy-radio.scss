@@ -1,0 +1,4 @@
+//Делает радио выдел.
+.toy-radio:checked ~ label[for="toy"]::before {
+  background-image: url("../img/icon-radio-on.svg");
+}

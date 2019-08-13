@@ -1,0 +1,132 @@
+.sub-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-menu__item {
+  width: 100%;
+  padding-left: 79px;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+
+.sub-menu__item-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sub-menu__item-link--cart-icon::before {
+  content: "";
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  top: 0;
+  left: 0;
+}
+
+.sub-menu__item-link--search-icon::before {
+  content: "";
+  background-image: url("../img/icon-search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  top: 0;
+  left: 0;
+}
+
+.sub-menu__ad {
+  display: none;
+}
+
+.sub-menu__item:first-of-type {
+  border-top: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .menu__sub-menu {
+    order: 1;
+  }
+
+  .sub-menu__item-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  .sub-menu__item {
+    padding: 0;
+    width: auto;
+    padding-left: 0;
+    border-bottom: none;
+  }
+
+  .sub-menu__item-link--cart-icon::before {
+    width: 21px;
+    height: 19px;
+    top: 0;
+    left: -45px;
+  }
+
+  .sub-menu__item-link--search-icon::before {
+    top: -27px;
+    left: -150px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+
+  .sub-menu__item:first-of-type {
+    border-top: none;
+  }
+
+  .sub-menu__item-text {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sub-menu__item:last-child {
+    margin-left: 35px;
+    padding-right: 0;
+  }
+
+  .sub-menu__item:first-child::after {
+    content: "";
+    border-left: 1px solid #ececec;
+    position: absolute;
+    top: -27px;
+    margin-left: 35px;
+    height: 80px;
+  }
+
+  .sub-menu__item-link--padding {
+    font-size: 14px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-right: 45px;
+    display: block;
+  }
+
+  .sub-menu__item {
+    padding-right: 35px;
+  }
+
+  .sub-menu__ad {
+    padding: 0;
+    display: none;
+  }
+}

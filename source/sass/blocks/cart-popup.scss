@@ -1,0 +1,71 @@
+.cart-popup {
+  background-color: white;
+  display: flex;
+  width: 318px;
+  justify-content: center;
+  margin: auto;
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.cart-popup__button {
+  background-color: #63d1bb;
+  border: 2px solid #63d1bb;
+  color: white;
+  width: 100%;
+}
+
+.cart-popup__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 30px;
+}
+
+.cart-popup__sub-text {
+  margin: 0;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.cart-popup__checkbox {
+  display: none;
+}
+
+.cart-popup__label {
+  width: 79px;
+  height: 52px;
+  display: inline-block;
+  background-color: white;
+  cursor: pointer;
+  line-height: 52px;
+  text-align: center;
+  font-weight: 700;
+  border: 2px solid #ececec;
+  margin-bottom: 30px;
+}
+
+//планшетная версия
+@media (min-width: $tablet-width) {
+  .cart-popup {
+    padding-left: 121px;
+    padding-right: 121px;
+    box-sizing: content-box;
+    box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  }
+
+  .cart-popup__button {
+    width: 348px;
+  }
+
+  .cart-popup__label {
+    width: 109px;
+  }
+}

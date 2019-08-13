@@ -1,0 +1,71 @@
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+//Фальшивый эдемент для центровки
+.menu__false {
+  width: 79px;
+  height: 79px;
+}
+
+.menu__toggle {
+  width: 79px;
+  height: 79px;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.menu__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .menu {
+    height: 79px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100px;
+  }
+
+  .menu__toggle,
+  .menu__false {
+    display: none;
+  }
+
+  .menu__delivery {
+    display: block;
+    order: 4;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu {
+    width: 150px;
+    order: 2;
+  }
+
+  .menu__logo-image {
+    width: 149px;
+    height: 72px;
+  }
+
+  .menu__delivery {
+    display: block;
+    font-size: 15px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    order: 5;
+  }
+}
