@@ -1,0 +1,19 @@
+@media (min-width: $tablet-width) {
+  .brake-line {
+    margin: 0;
+    margin-top: 53px;
+    margin-bottom: 53px;
+
+    & svg {
+      width: 768px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .brake-line svg {
+    width: 1050px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}

@@ -1,0 +1,34 @@
+.next-back__back-button {
+  height: 52px;
+  width: 50%;
+  border: 1px solid #ececec;
+  background-color: white;
+  margin-bottom: 38px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-back__next-button {
+  height: 52px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid #ececec;
+  border-left: none;
+  background-color: white;
+  margin-bottom: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+// Планшетная версия
+@media (min-width: $tablet-width) {
+  .next-back__back-button,
+  .next-back__next-button {
+    background-color: transparent;
+    border: none;
+  }
+}

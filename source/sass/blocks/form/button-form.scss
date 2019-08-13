@@ -1,0 +1,58 @@
+.button-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.button-form__buy {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 23px;
+}
+
+.button-form__note {
+  margin-top: 10px;
+  margin-bottom: 22px;
+  font-size: 13px;
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .button-form {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .button-form__buy {
+    width: 230px;
+    margin-bottom: 48px;
+  }
+
+  .button-form__note {
+    width: 50%;
+    text-align: right;
+    padding-right: 7px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .button-form {
+    width: 1150px;
+    padding-left: 250px;
+  }
+
+  .button-form__note {
+    padding-right: 96px;
+  }
+}

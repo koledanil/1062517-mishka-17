@@ -1,0 +1,45 @@
+.contacts__table {
+  margin-bottom: 10px;
+}
+
+.contacts-table__cell {
+  padding-bottom: 25px;
+  vertical-align: top;
+}
+
+.contacts-table__cell--left-padding {
+  padding-left: 20px;
+}
+
+.contacts-table__emalil-link {
+  color: #444444;
+  text-decoration: none;
+  border-bottom: 1px solid #89dccc;
+}
+
+
+@media (min-width: $tablet-width) {
+  .contacts tbody {
+    width: 665px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts-table tr:nth-child(1) {
+    padding-right: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts tbody {
+    width: 300px;
+    margin-left: 177px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__table:last-child {
+    margin-bottom: 100px;
+  }
+}

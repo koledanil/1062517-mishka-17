@@ -1,0 +1,137 @@
+.hot {
+  display: flex;
+  width: 320px;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.hot__title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.hot__subtitle {
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.hot__product-price {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.hot__image-product {
+  display: block;
+  background-color: #f1f1f1;
+}
+
+// Планшетная версия
+@media (min-width: $tablet-width) {
+  .hot {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .hot__wrapper {
+    display: flex;
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .hot__title {
+    font-size: 43px;
+    line-height: 52px;
+    width: 80%;
+  }
+
+  .hot__subtitle {
+    width: 15%;
+    box-sizing: border-box;
+    margin-bottom: 23px;
+    text-align: right;
+    line-height: 18px;
+  }
+
+  .hot__image-product {
+    width: 333px;
+    height: 404px;
+    top: 15px;
+    right: 0;
+    position: absolute;
+    display: block;
+    background-color: #f1f1f1;
+  }
+
+  .hot__product-price {
+    margin-top: 0;
+    margin-bottom: 34px;
+    width: 290px;
+    font-size: 20px;
+  }
+
+  .hot__buy-button {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hot {
+    width: 1150px;
+    position: relative;
+  }
+
+  .hot__wrapper {
+    width: 1150px;
+  }
+
+  .hot__image-product {
+    top: 46px;
+    right: 50px;
+    width: 525px;
+    height: 636px;
+  }
+
+  .hot__title {
+    width: 880px;
+    z-index: 9999;
+    font-size: 53px;
+    margin-bottom: 38px;
+    order: 2;
+    margin-top: 40px;
+  }
+
+  .hot__subtitle {
+    order: 1;
+    display: flex;
+    width: 80px;
+    padding-top: 5px;
+    position: static;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  .hot__product-price {
+    margin-top: 135px;
+    display: flex;
+    width: 290px;
+    margin-left: 175px;
+    justify-content: center;
+    margin-bottom: 44px;
+  }
+
+  .hot__buy-button {
+    margin-left: 175px;
+  }
+}
