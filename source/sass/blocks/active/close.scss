@@ -23,12 +23,6 @@
 
 .close:hover::before,
 .close:hover::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 0;
-  width: 18px;
-  height: 3px;
   background-color: #62d1ba;
 }
 

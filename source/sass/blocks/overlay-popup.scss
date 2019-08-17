@@ -1,0 +1,31 @@
+.overlay-popup {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  cursor: default;
+}
+
+.popup {
+  top: -100%;
+  right: 0;
+  left: 50%;
+  margin: 0;
+  position: fixed;
+  background-color: #ffffff;
+  color: #323232;
+  z-index: 999999;
+}
+
+.overlay-popup:target {
+  display: block;
+}
+
+.overlay-popup:target + .popup {
+  transform: translate(-50%, 0);
+  top: 20%;
+}
