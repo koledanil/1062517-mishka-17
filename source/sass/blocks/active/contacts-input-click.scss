@@ -1,0 +1,15 @@
+.contacts-input-click:hover {
+  border-color: #46c1ae;
+  opacity: $opacity-hover;
+}
+
+.contacts-input-click:active {
+  opacity: $opacity-active;
+  border-color: #46c1ae;
+}
+
+.contacts-input-click:focus {
+  outline: none;
+  border-color: #46c1ae;
+  opacity: $opacity-focus;
+}

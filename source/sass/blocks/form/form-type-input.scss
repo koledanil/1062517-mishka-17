@@ -1,7 +1,15 @@
 @media (min-width: $tablet-width) {
   .form-type-input {
-    margin-left: 100px;
-    width: 460px;
+    width: 490px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-type-input {
+    width: 600px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;

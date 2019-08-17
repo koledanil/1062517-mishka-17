@@ -1,0 +1,11 @@
+.textarea-click:hover {
+  opacity: $opacity-hover;
+  border-color: #36ad9a;
+  animation: bounce 0.6s;
+}
+
+.textarea-click:focus {
+  outline: none;
+  opacity: $opacity-focus;
+  border-color: #36ad9a;
+}

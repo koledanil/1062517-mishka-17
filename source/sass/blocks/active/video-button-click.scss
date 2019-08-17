@@ -1,0 +1,33 @@
+
+.video-button-click::before {
+  content: "";
+  background-image: url("../img/icon-play.svg");
+  background-size: 70px 54px;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 54px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.video-button-click:hover::before {
+  transform: scale(1.2);
+}
+
+.video-button-click:active::before {
+  transform: scale(0.8);
+  opacity: 0.8;
+}
+
+@media (min-width: $tablet-width) {
+  .video-button-click::before {
+    background-size: 101px 77px;
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 77px;
+  }
+}

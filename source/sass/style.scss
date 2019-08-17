@@ -24,8 +24,7 @@
 @import "blocks/index/footer-logo.scss";  //------------------------новый
 @import "blocks/index/footer.scss"; // обработан
 @import "blocks/cart-popup.scss"; // никаких изменений делать не надо
-//шапка сайта и меню на всех страницах
-
+@import "blocks/overlay-popup.scss"; // оверлей для выбора размера
 @import "blocks/main-header.scss"; // обработан
 @import "blocks/main-menu-wrapper.scss"; //------------------------новый
 @import "blocks/menu-functional.scss"; //------------------------новый
@@ -50,11 +49,11 @@
 @import "blocks/form/divider-line.scss"; //------------------------новый
 @import "blocks/form/form-type.scss"; //------------------------новый
 @import "blocks/form/color-form.scss"; //------------------------новый
-@import "blocks/form/toy-radio.scss"; //------------------------новый
-@import "blocks/form/interior-radio.scss"; //------------------------новый
 @import "blocks/form/form-grey-divider.scss"; //------------------------новый
 @import "blocks/form/form-type-input.scss"; //------------------------новый
 @import "blocks/form/form-color-input.scss"; //------------------------новый
+@import "blocks/form/toy-radio.scss"; //------------------------новый
+@import "blocks/form/interior-radio.scss"; //------------------------новый
 @import "blocks/form/contacts-input.scss"; //------------------------новый
 @import "blocks/form/form-contacts-textarea.scss"; //------------------------новый
 @import "blocks/form/form-contacts-input.scss"; //------------------------новый
@@ -63,3 +62,29 @@
 @import "blocks/form/form-user.scss"; //------------------------новый
 @import "blocks/form/credential.scss"; //------------------------новый
 @import "blocks/form/comments-area.scss"; //------------------------новый
+
+//активные состояния
+@import "blocks/active/menu-item-click.scss";
+@import "blocks/active/menu-logo-click.scss";
+@import "blocks/active/review-arrow-click.scss";
+@import "blocks/active/footer-logo-mi-click.scss";
+@import "blocks/active/footer-social-click.scss";
+@import "blocks/active/footer-logo-h-click.scss";
+@import "blocks/active/cta-ghost-click.scss";
+@import "blocks/active/cta-filled-click.scss";
+@import "blocks/active/mail-click.scss";
+@import "blocks/active/textarea-click.scss";
+@import "blocks/active/contacts-input-click.scss";
+@import "blocks/active/popup-checkbox-click.scss";
+@import "blocks/active/link-in-text.scss";
+@import "blocks/active/promo-click.scss";
+@import "blocks/active/video-button-click.scss";
+@import "blocks/active/prod-card-click.scss";
+@import "blocks/active/link-prod-title.scss";
+@import "blocks/active/prod-cart-click.scss";
+@import "blocks/active/video-card-click.scss";
+@import "blocks/active/close.scss";
+
+//активные состояния для формы - тип -- прописаны в toy-radio & interior-radio & form-type
+//активыне состояния для формы - цвет -- прописаны в form-color-input
+//активыне состояния для иконки поиск -- прописаны в sub-menut

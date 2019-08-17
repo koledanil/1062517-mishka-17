@@ -1,0 +1,11 @@
+.promo-click:hover {
+  transform: translateY(-6px);
+  animation: transform 0.15s;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-click:hover {
+    transform: translateY(-6px);
+    animation: transform 0.15s;
+  }
+}
