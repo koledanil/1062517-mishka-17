@@ -1,0 +1,19 @@
+.popup-checkbox-click:hover {
+  border-color: rgba(68, 68, 68, $opacity-hover);
+}
+
+.popup-checkbox-click:active {
+  border-color: rgba(99, 209, 187, $opacity-active);
+}
+
+.cart-popup__checkbox--s:checked ~ [for="select-size-s"] {
+  border-color: rgba(99, 209, 187, $opacity-focus);
+}
+
+.cart-popup__checkbox--m:checked ~ [for="select-size-m"] {
+  border-color: rgba(99, 209, 187, $opacity-focus);
+}
+
+.cart-popup__checkbox--l:checked ~ [for="select-size-l"] {
+  border-color: rgba(99, 209, 187, $opacity-focus);
+}

@@ -1,0 +1,11 @@
+.review-arrow-click:hover {
+  opacity: $opacity-hover;
+}
+
+.review-arrow-click:active {
+  opacity: $opacity-active;
+}
+
+.review-arrow-click:disabled {
+  opacity: $opacity-disabled;
+}

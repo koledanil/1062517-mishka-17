@@ -1,0 +1,28 @@
+a.footer-logo-h-click {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-logo-h-click .footer__created-logo svg {
+  opacity: 1;
+}
+
+a.footer-logo-h-click:hover {
+  opacity: $opacity-hover;
+  color: #000000;
+  cursor: pointer;
+}
+
+a.footer-logo-h-click:hover .footer__created-logo svg {
+  opacity: $opacity-hover;
+}
+
+a.footer-logo-h-click:active {
+  opacity: $opacity-active;
+  color: #000000;
+  cursor: pointer;
+}
+
+a.footer-logo-h-click:active .footer__created-logo svg {
+  opacity: 0.8;
+}

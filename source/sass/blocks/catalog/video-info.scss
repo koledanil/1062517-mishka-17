@@ -36,19 +36,6 @@
 
 .video-info__photo {
   position: relative;
-
-  &::before {
-    content: "";
-    background-image: url("../img/icon-play.svg");
-    width: 101px;
-    height: 77px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
 }
 
 .video-info__text {
@@ -165,10 +152,10 @@
 
   .video-info__container {
     list-style: none;
-    padding-left: 45px;
+    padding-left: 80px;
   }
 
   .video-info__button {
-    padding: 0;
+    padding-right: 50px;
   }
 }

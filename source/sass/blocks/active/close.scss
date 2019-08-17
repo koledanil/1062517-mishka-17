@@ -1,0 +1,61 @@
+.close {
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border: 20px solid transparent;
+}
+
+
+.close::before,
+.close::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 18px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.close:hover::before,
+.close:hover::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 18px;
+  height: 3px;
+  background-color: #62d1ba;
+}
+
+.close:active::before,
+.close:active::after {
+  opacity: $opacity-active;
+  background-color: #62d1ba;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+@media (min-width: $tablet-width) {
+  .close {
+    border: 20px solid transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .close {
+    top: 20px;
+    right: 20px;
+    border: 5px solid transparent;
+  }
+}

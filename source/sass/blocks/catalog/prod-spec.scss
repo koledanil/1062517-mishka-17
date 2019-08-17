@@ -1,11 +1,11 @@
 .prod-spec {
   list-style: none;
   width: 260px;
-  padding-right: 30px;
+  // padding-right: 30px;
   padding-left: 30px;
   box-sizing: border-box;
   border: 1px solid #ececec;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   margin-top: 10px;
 }
 
@@ -24,29 +24,38 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ececec;
+  margin-right: 30px;
+  position: relative;
 }
 
 .prod-spec__price {
-  padding-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   font-weight: bold;
   color: #000000;
 }
 
 .prod-spec__buy-button {
-  width: 20px;
-  height: 19px;
-  padding-left: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   z-index: 9999;
 }
+
+.prod-spec__buy-button svg {
+  fill: #d3d2d2;
+}
+
 
 //планшетная версия
 @media (min-width: $tablet-width) {
   .prod-spec {
     width: 334px;
     min-height: 334px;
-    margin-bottom: 54px;
+    // margin-bottom: 54px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,6 +71,7 @@
     margin: 0;
     padding: 0;
     border-top: 1px solid #ececec;
+    margin-right: 30px;
   }
 }
 
