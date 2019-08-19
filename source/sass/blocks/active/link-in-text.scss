@@ -1,0 +1,11 @@
+.link-in-text {
+  color: #36ad9a;
+
+  &:hover {
+    opacity: $opacity-hover;
+
+    &:active {
+      opacity: $opacity-active;
+    }
+  }
+}

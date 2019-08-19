@@ -1,0 +1,11 @@
+.link-prod-title {
+  text-decoration: none;
+
+  &:hover {
+    opacity: $opacity-hover;
+
+    &:active {
+      opacity: $opacity-active;
+    }
+  }
+}

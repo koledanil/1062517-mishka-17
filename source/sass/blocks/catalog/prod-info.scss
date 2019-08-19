@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.prod-info__photo {
+  margin-bottom: 30px;
+}
+
 .prod-info__photo-image {
   margin-bottom: -10px;
   border-bottom: 1px solid #ececec;
@@ -25,6 +29,7 @@
   .prod-info__photo {
     display: flex;
     width: 670px;
+    margin-bottom: 54px;
   }
 
   .prod-info__photo-image {
@@ -40,7 +45,7 @@
 @media (min-width: $desktop-width) {
   .prod-info {
     width: 1150px;
-    padding-left: 50px;
+    padding-left: 0;
     padding-right: 50px;
     display: flex;
     justify-content: space-between;

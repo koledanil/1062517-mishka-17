@@ -1,2 +1,11 @@
 $tablet-width: 768px;
 $desktop-width: 1150px;
+
+$opacity-hover: 0.7;
+$opacity-active: 0.3;
+$opacity-disabled: 0.2;
+$opacity-focus: 1;
+
+$shadow_card_video--active: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+$shadow_card_video--hover: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+//для кнопок ghost заданы свои параметры опасити.

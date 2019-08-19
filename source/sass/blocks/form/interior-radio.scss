@@ -1,3 +1,8 @@
 .interior-radio:checked ~ label[for="interior"]::before {
-  background-image: url("../img/icon-radio-on.svg");
+  box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #444444;
+  background-color: #62d1ba;
+}
+
+.interior-radio:active ~ label[for="interior"]::before {
+  box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px rgba(68, 68, 68, $opacity-active);
 }

@@ -2,19 +2,29 @@
   font-weight: 700;
   padding-bottom: 20px;
   cursor: pointer;
-  margin-left: 60px;
+  padding-left: 60px;
   position: relative;
   line-height: 40px;
 
   &::before {
     content: "";
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/icon-radio-off.svg");
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #444444;
+    background-color: white;
+    border-radius: 50%;
     position: absolute;
     cursor: pointer;
-    left: -60px;
-    top: 0;
+    left: 10px;
+    top: 10px;
+  }
+
+  &:hover::before {
+    box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #62d1ba;
+  }
+
+  &:hover:focus {
+    box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #62d1ba;
   }
 }
 
@@ -31,6 +41,13 @@
     box-sizing: border-box;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+
+  .form-type-input__label {
+    padding-left: 60px;
+    margin-left: 100px;
+    position: relative;
+    line-height: 40px;
   }
 }
 

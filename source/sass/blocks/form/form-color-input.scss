@@ -14,7 +14,7 @@
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url("../img/icon-checkbox-off.svg");
+    border: 2px solid #444444;
     position: absolute;
     cursor: pointer;
     left: -60px;
@@ -23,6 +23,7 @@
 }
 
 //Делает чекбокс выдел.
+
 .white-checkbox:checked ~ label[for="white-id"]::before,
 .grey-checkbox:checked ~ label[for="grey-id"]::before,
 .tiffany-checkbox:checked ~ label[for="tiffany-id"]::before,
@@ -30,8 +31,26 @@
 .pink-checkbox:checked ~ label[for="pink-id"]::before,
 .orange-checkbox:checked ~ label[for="orange-id"]::before {
   background-image: url("../img/icon-checkbox-on.svg");
+  border-color: #444444;
 }
 
+.white-checkbox:hover ~ label[for="white-id"]::before,
+.grey-checkbox:hover ~ label[for="grey-id"]::before,
+.tiffany-checkbox:hover ~ label[for="tiffany-id"]::before,
+.black-checkbox:hover ~ label[for="black-id"]::before,
+.pink-checkbox:hover ~ label[for="pink-id"]::before,
+.orange-checkbox:hover ~ label[for="orange-id"]::before {
+  border-color: #62d1ba;
+}
+
+.white-checkbox:active ~ label[for="white-id"]::before,
+.grey-checkbox:active ~ label[for="grey-id"]::before,
+.tiffany-checkbox:active ~ label[for="tiffany-id"]::before,
+.black-checkbox:active ~ label[for="black-id"]::before,
+.pink-checkbox:active ~ label[for="pink-id"]::before,
+.orange-checkbox:active ~ label[for="orange-id"]::before {
+  border-color: rgba(68, 68, 68, $opacity-active);
+}
 
 @media (min-width: $tablet-width) {
   .form-color-input {

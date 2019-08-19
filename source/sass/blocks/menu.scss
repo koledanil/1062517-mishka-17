@@ -1,28 +1,61 @@
 .menu {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #ececec;
+  min-height: 79px;
 }
 
-.menu__logo {
+.menu__logo-img-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-//Фальшивый эдемент для центровки
-.menu__false {
-  width: 79px;
-  height: 79px;
+ul.menu-none {
+  display: none;
 }
 
 .menu__toggle {
   width: 79px;
   height: 79px;
-  background-color: transparent;
+  // background-color: transparent;
   border: transparent;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.menu__checkbox {
+  display: flex;
+  width: 79px;
+  height: 79px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.menu__checkbox::before {
+  content: "";
+  background-image: url("../img/icon-menu-open.svg");
+  width: 19px;
+  height: 14px;
+}
+
+.menu__toggle:checked ~ .menu-none {
+  display: block;
+}
+
+.menu__toggle:checked ~ .menu__checkbox::before {
+  background-image: url("../img/icon-menu-close.svg");
+  width: 21px;
+  height: 21px;
 }
 
 .menu__delivery {
@@ -36,10 +69,10 @@
     justify-content: space-between;
     display: flex;
     width: 100px;
+    border-bottom: none;
   }
 
-  .menu__toggle,
-  .menu__false {
+  .menu__checkbox {
     display: none;
   }
 
@@ -47,6 +80,10 @@
     display: block;
     order: 4;
     font-size: 14px;
+  }
+
+  ul.menu-none {
+    display: flex;
   }
 }
 
