@@ -19,9 +19,9 @@
         <div class="menu">
           <a class="menu__logo-link menu-logo-click" href="index.html">
             <picture class="menu__logo-img-wrapper">
-              <source srcset="../img/logo-desktop.svg" media="(min-width: 1150px)">
-              <source srcset="../img/logo-tablet.svg" media="(min-width: 768px)">
-              <img class="menu__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка">
+              <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка">
             </picture>
           </a>
         </div>
@@ -84,9 +84,9 @@
             </tr>
           </table>
           <picture>
-            <source srcset="../img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)">
-            <source srcset="../source/img/triple-set-tablet@1x.jpg" media="(min-width: 768px)">
-            <img class="hot__image-product" src="../source/img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки - фотография товара">
+            <source srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+            <source srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="hot__image-product" src="img/triple-set-mobile@1x.jpg" srcser="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки - фотография товара">
           </picture>
           <b class="hot__product-price">Цена: 9909 руб.</b>
           <a class="hot__buy-button cta-button cta-ghost-click" href="#win1">Заказать</a>
@@ -207,11 +207,13 @@
           </tr>
         </table>
       </div>
-      <picture>
-        <source srcset="../source/img/map-tablet@1x.jpg" media="(min-width: 768px)">
-        <img class="contacts__map" src="../source/img/map-mobile@1x.jpg" width="320" height="457" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </picture>
-
+      <div class="contacts-map" id="map">
+        <picture>
+          <source srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+          <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" width="320" height="457" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </picture>
+      </div>
       <a class="contacts__button cta-button cta-ghost-click" href="#">Напишите нам</a>
     </section>
   </main>
@@ -298,7 +300,8 @@
       </form>
     </div>
   </section>
-
+  <script src="js/scripts.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpWA8fuZJiLCF4-0kv8MX8pxxlf8btFdI&callback=initMap" async defer></script>
 </body>
 
 </html>

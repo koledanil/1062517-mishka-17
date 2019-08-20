@@ -1,0 +1,15 @@
+.contacts-map {
+  width: 768px;
+  height: 457px;
+  margin-bottom: -6px;
+  background-color: #f1f1f1;
+  display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-map {
+    width: 525px;
+    height: 457px;
+    margin-right: 50px;
+  }
+}
