@@ -12,7 +12,6 @@ function initMap() {
     center: {lat: 59.93889, lng: 30.323090},
     zoomControl: true,
     scaleControl: true,
-   streetViewControl: true,
   });
 
   var image = 'img/map-pin-svg.svg';
