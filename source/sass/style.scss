@@ -23,8 +23,15 @@
 @import "blocks/index/social-list.scss";  //------------------------новый
 @import "blocks/index/footer-logo.scss";  //------------------------новый
 @import "blocks/index/footer.scss"; // обработан
+
+//карта проезда - гугел
+@import "blocks/index/contacts-map.scss";
+
+//попап
 @import "blocks/cart-popup.scss"; // никаких изменений делать не надо
 @import "blocks/overlay-popup.scss"; // оверлей для выбора размера
+
+//главное меню
 @import "blocks/main-header.scss"; // обработан
 @import "blocks/main-menu-wrapper.scss"; //------------------------новый
 @import "blocks/menu-functional.scss"; //------------------------новый
