@@ -1,3 +1,7 @@
+.video-card-click {
+  transition: all 0.2s ease-in;
+}
+
 .video-card-click:hover {
   box-shadow: $shadow_card_video--hover;
 }

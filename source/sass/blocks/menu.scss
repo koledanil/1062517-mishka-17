@@ -46,6 +46,7 @@ ul.menu-none {
   background-image: url("../img/icon-menu-open.svg");
   width: 19px;
   height: 14px;
+  transition: all 0.1s ease-out;
 }
 
 .menu__toggle:checked ~ .menu-none {

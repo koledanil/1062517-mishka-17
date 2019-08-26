@@ -12,6 +12,7 @@
   left: 0;
   right: 0;
   margin: auto;
+  transition: all 0.1s ease-in;
 }
 
 .video-button-click:hover::before {
