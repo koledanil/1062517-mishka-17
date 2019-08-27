@@ -47,6 +47,8 @@
 
 .prod-spec__buy-button svg {
   fill: #d3d2d2;
+  width: 21px;
+  height: 20px;
 }
 
 
@@ -55,7 +57,6 @@
   .prod-spec {
     width: 334px;
     min-height: 334px;
-    // margin-bottom: 54px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

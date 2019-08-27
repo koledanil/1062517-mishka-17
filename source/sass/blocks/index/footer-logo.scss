@@ -2,6 +2,11 @@
   display: none;
 }
 
+.footer-logo svg {
+  width: 101px;
+  height: 34px;
+}
+
 //планшетная версия
 @media (min-width: $tablet-width) {
   .footer-logo {
