@@ -1,9 +1,10 @@
 .tagline__text {
   font-size: 13px;
-  line-height: 22px;
+  line-height: 23px;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  margin-top: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,15 +20,16 @@
   }
 
   .tagline__text {
-    font-size: 16px;
-    padding-right: 60px;
+    font-size: 17px;
     line-height: 27px;
     margin-left: 0;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .tagline__text {
-    margin-left: 10px;
+
+@media (min-width: $desktop-width) {
+  .tagline {
+    padding-left: 35px;
+    padding-right: 25px;
   }
 }

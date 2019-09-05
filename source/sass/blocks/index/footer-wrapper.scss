@@ -10,3 +10,11 @@
   background-color: #f1f1f1;
   border-top: 1px solid #ececec;
 }
+
+
+@media (min-width: $tablet-width) {
+  .footer-wrapper {
+    padding-right: 26px;
+    padding-left: 60px;
+  }
+}

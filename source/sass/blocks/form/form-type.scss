@@ -10,7 +10,7 @@
     content: "";
     width: 20px;
     height: 20px;
-    box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #444444;
+    box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px #444444;
     background-color: white;
     border-radius: 50%;
     position: absolute;
@@ -20,11 +20,11 @@
   }
 
   &:hover::before {
-    box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #62d1ba;
+    box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px #62d1ba;
   }
 
   &:hover:focus {
-    box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #62d1ba;
+    box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px #62d1ba;
   }
 }
 
@@ -44,10 +44,19 @@
   }
 
   .form-type-input__label {
-    padding-left: 60px;
+    padding-left: 50px;
     margin-left: 100px;
     position: relative;
-    line-height: 40px;
+    line-height: 58px;
+    font-size: 19px;
+
+    &::before {
+
+      width: 20px;
+      height: 20px;
+      left: -17px;
+      top: 23px;
+    }
   }
 }
 

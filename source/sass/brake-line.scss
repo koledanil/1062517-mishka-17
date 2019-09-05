@@ -13,7 +13,12 @@
 @media (min-width: $desktop-width) {
   .brake-line svg {
     width: 1050px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .brake-line--review svg {
+    background-color: red;
+    margin-top: 0;
   }
 }

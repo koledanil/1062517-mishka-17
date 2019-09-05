@@ -65,7 +65,7 @@ ul.menu-none {
 
 @media (min-width: $tablet-width) {
   .menu {
-    height: 79px;
+    height: 90px;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -80,11 +80,23 @@ ul.menu-none {
   .menu__delivery {
     display: block;
     order: 4;
-    font-size: 14px;
+    font-size: 15px;
+    margin-top: 8px;
   }
 
   ul.menu-none {
     display: flex;
+  }
+
+  .menu__logo-link {
+    display: flex;
+    padding-top: 4px;
+    height: 88px;
+  }
+
+  .menu__logo-image {
+    width: 112px;
+    height: 46px;
   }
 }
 
@@ -102,7 +114,7 @@ ul.menu-none {
   .menu__delivery {
     display: block;
     font-size: 15px;
-    padding-top: 0;
+    padding-top: 6px;
     padding-bottom: 20px;
     order: 5;
   }

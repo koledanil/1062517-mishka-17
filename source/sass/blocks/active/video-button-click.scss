@@ -7,7 +7,7 @@
   width: 70px;
   height: 54px;
   position: absolute;
-  top: 0;
+  top: 70px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -30,5 +30,16 @@
     background-repeat: no-repeat;
     width: 101px;
     height: 77px;
+    top: -26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-button-click::before {
+    background-size: 101px 77px;
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 77px;
+    top: 0;
   }
 }

@@ -1,7 +1,7 @@
 .features-list__item {
   margin-top: 85px;
   position: relative;
-  line-height: 24px;
+  line-height: 19px;
 }
 
 .features-list__item--eco-icon,
@@ -11,7 +11,7 @@
 .features-list__item--support-icon,
 .features-list__item--box-icon {
   position: absolute;
-  top: -130px;
+  top: -135px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,13 +21,36 @@
     justify-content: space-between;
   }
 
+  .features-list__item--eco-icon,
+  .features-list__item--price-icon,
+  .features-list__item--like-icon,
+  .features-list__item--hand-icon,
+  .features-list__item--support-icon,
+  .features-list__item--box-icon {
+    position: absolute;
+    top: -160px;
+  }
+
   .features-list__item {
-    width: 300px;
+    margin-top: 110px;
+    font-size: 20px;
+    line-height: 22px;
+    width: 330px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features-list__item {
     width: 250px;
+  }
+
+  .features-list__item--eco-icon,
+  .features-list__item--price-icon,
+  .features-list__item--like-icon,
+  .features-list__item--hand-icon,
+  .features-list__item--support-icon,
+  .features-list__item--box-icon {
+    position: absolute;
+    top: -165px;
   }
 }

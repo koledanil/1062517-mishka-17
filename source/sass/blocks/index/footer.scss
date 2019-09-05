@@ -55,9 +55,9 @@ a.footer__created-text {
 @media (min-width: $tablet-width) {
   .footer {
     width: 768px;
-    padding-left: 50px;
+    padding-left: 15px;
     padding-right: 50px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
@@ -70,8 +70,10 @@ a.footer__created-text {
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .footer {
+    // padding-left: 0;
+    // padding-right: 0;
     width: 1150px;
     height: 143px;
   }

@@ -3,6 +3,22 @@
   text-transform: uppercase;
   font-weight: 700;
   color: #63d1bb;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   font-size: 14px;
+}
+
+.color-text__no-subtitle {
+  margin-bottom: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .color-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color-text {
+    margin-left: 60px;
+  }
 }

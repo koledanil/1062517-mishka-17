@@ -3,10 +3,14 @@
   cursor: pointer;
 }
 
+.form-contacts-input__label::placeholder {
+  font-size: 14px;
+}
+
 @media (min-width: $tablet-width) {
   .form-contacts-input {
-    width: 490px;
-    margin-left: 100px;
+    width: 520px;
+    margin-left: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

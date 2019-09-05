@@ -1,8 +1,12 @@
 .interior-radio:checked ~ label[for="interior"]::before {
-  box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #444444;
+  box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px #444444;
   background-color: #62d1ba;
 }
 
+.interior-radio:hover ~ label[for="interior"]::before {
+  box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px #62d1ba;
+}
+
 .interior-radio:active ~ label[for="interior"]::before {
-  box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px rgba(68, 68, 68, $opacity-active);
+  box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px rgba(68, 68, 68, $opacity-active);
 }

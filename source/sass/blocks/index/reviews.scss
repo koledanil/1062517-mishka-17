@@ -22,26 +22,22 @@
 
 .reviews__title {
   margin: 0;
+  margin-bottom: 22px;
 }
 
 .reviews__text {
   line-height: 30px;
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 26px;
 }
-
-.reviews__text-p2 {
-  line-height: 30px;
-  margin-bottom: 30px;
-}
-
 
 .reviews__author-name {
   display: block;
   font-style: normal;
   font-weight: 700;
   color: black;
-  margin-bottom: 3px;
-  padding-right: 200px;
+  margin-bottom: 8px;
+  // padding-right: 200px;
 }
 
 .reviews__author-insta {
@@ -55,6 +51,7 @@
 
 .reviews__button {
   margin: 0;
+  margin-bottom: 10px;
 }
 
 // Планшетная версия
@@ -68,7 +65,7 @@
     background-size: 350px 457px;
     background-position: left top;
     position: relative;
-    padding-top: 65px;
+    padding-top: 85px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background:
@@ -111,17 +108,22 @@
   .reviews__title {
     font-size: 43px;
     width: 70%;
-    margin-bottom: 65px;
+    margin-bottom: 62px;
   }
 
   .reviews__author {
+    font-size: 18px;
     position: relative;
     display: block;
   }
 
+  .reviews__text {
+    margin-bottom: 57px;
+  }
+
   .reviews__button {
     position: absolute;
-    top: 55px;
+    top: 78px;
     right: 50px;
     width: 175px;
   }
@@ -147,5 +149,9 @@
 
   .reviews__item {
     margin-left: 177px;
+  }
+
+  .reviews__text {
+    margin-bottom: 37px;
   }
 }

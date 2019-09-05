@@ -68,9 +68,9 @@
               </div>
 
               <div class="form-type-input form-wrapper">
-                <input class="form-type-input__radio display-none toy-radio" type="radio" name="type" value="toy" id="toy" checked>
-                <input class="form-type-input__radio display-none interior-radio" type="radio" name="type" value="interior" id="interior">
-                <label class="form-type-input__label" for="interior">Для интерьера</label>
+                <input class="form-type-input__radio visually-hidden toy-radio" type="radio" name="type" value="toy" id="toy" checked tabindex="0">
+                <input class="form-type-input__radio visually-hidden interior-radio" type="radio" name="type" value="interior" id="interior" tabindex="0">
+                <label class="form-type-input__label" for="interior" tabindex="0" >Для интерьера</label>
                 <label class="form-type-input__label" for="toy">Детские игрушки</label>
               </div>
             </div>
@@ -95,7 +95,7 @@
               <label class="form-color-input__label" for="grey-id">Серый</label>
               <label class="form-color-input__label" for="tiffany-id">&laquo;Тиффани&raquo;</label>
               <label class="form-color-input__label" for="black-id">Черный</label>
-              <label class="form-color-input__label" for="pink-id">Розовый-черный</label>
+              <label class="form-color-input__label" for="pink-id">Розовый</label>
               <label class="form-color-input__label" for="orange-id">Оранжевый</label>
             </div>
           </div>
@@ -127,14 +127,14 @@
               <div class="credential">
                 <div class="divider-form form-wrapper">
                   <div class="divider-form form-title-wrapper ">
-                    <span class="divider-form__legend color-text">Телефон</span>
+                    <span class="divider-form__legend color-text color-text__no-subtitle">Тел.</span>
                     <span class="divider-form__legend  divider-line"></span>
                   </div>
                   <input class="contacts-input contacts-input--long contacts-input-click" type="tel" name="last-name" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </div>
                 <div class="divider-form form-wrapper">
                   <div class="divider-form form-title-wrapper ">
-                    <span class="divider-form__legend color-text">E-mail</span>
+                    <span class="divider-form__legend color-text color-text__no-subtitle">Email</span>
                     <span class="divider-form__legend divider-line"></span>
                   </div>
                   <input class="contacts-input contacts-input--long contacts-input-click" type="email" name="last-name" placeholder="Ваш Email*" required>
@@ -145,7 +145,7 @@
             <!-- Комент к заказу -->
             <div class="comments-area form-wrapper">
               <div class="divider-form form-title-wrapper">
-                <span class="divider-form__legend color-text">Дополнительно</span>
+                <span class="divider-form__legend color-text">Доп.</span>
                 <span class="divider-form__legend divider-line"></span>
               </div>
               <textarea class="form-contacts-textarea textarea-click" name="order-cooment" cols="11" placeholder="Опишите пожелания к заказу"></textarea>

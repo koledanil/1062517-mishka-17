@@ -1,5 +1,5 @@
 .contacts__table {
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .contacts-table__cell {
@@ -8,7 +8,7 @@
 }
 
 .contacts-table__cell--left-padding {
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .contacts-table__emalil-link {
@@ -24,6 +24,10 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .contacts-table {
+    margin-bottom: 45px;
   }
 
   .contacts-table tr:nth-child(1) {

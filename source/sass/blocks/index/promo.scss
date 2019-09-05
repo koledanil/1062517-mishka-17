@@ -32,7 +32,7 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top: 100px;
+  margin-top: 127px;
   position: relative;
 }
 
@@ -111,7 +111,7 @@ a.promo__list-link {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 72px;
   margin-left: 35px;
   margin-right: 35px;
   padding: 0;
@@ -132,7 +132,7 @@ a.promo__list-link {
       url("../img/hero-tablet@1x.jpg"),
       url("../img/webp/hero-tablet@1x.webp");
     background-size: 1150px 746px;
-    height: 746px;
+    height: 770px;
     margin: 0;
     padding: 0;
     margin-top: 60px;
@@ -148,7 +148,7 @@ a.promo__list-link {
   .promo__list {
     width: 100%;
     justify-content: center;
-    margin-top: 349px;
+    margin-top: 368px;
   }
 
   .promo__list::after {
@@ -190,14 +190,15 @@ a.promo__list-link {
   }
 
   .promo__title {
-    font-size: 53px;
-    line-height: 66px;
-    margin-top: 145px;
+    font-size: 43px;
+    line-height: 56px;
+    margin-top: 175px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .promo__list {
+    margin-top: 358px;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -218,18 +219,24 @@ a.promo__list-link {
     }
   }
 
+  .promo__title {
+    font-size: 53px;
+    line-height: 56px;
+    margin-top: 184px;
+  }
+
   .promo__list-item {
     width: 525px;
     list-style: none;
   }
 
   .promo__list-link--light-icon::after {
-    top: 25px;
-    left: 440px;
+    top: 30px;
+    left: 450px;
   }
 
   .promo__list-link--block-icon::after {
-    top: 25px;
+    top: 30px;
     left: 430px;
   }
 }
