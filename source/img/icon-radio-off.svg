@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icon-radio-off</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icon-radio-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="Oval" stroke="#444444" stroke-width="2" cx="20" cy="20" r="19"></circle>
-    </g>
-</svg>
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><circle stroke="#444" stroke-width="2" cx="20" cy="20" r="19" fill="none"/></svg>

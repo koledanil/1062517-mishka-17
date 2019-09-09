@@ -21,7 +21,7 @@
 
   .tagline__text {
     font-size: 17px;
-    line-height: 27px;
+    line-height: 29px;
     margin-left: 0;
   }
 }
@@ -29,7 +29,15 @@
 
 @media (min-width: $desktop-width) {
   .tagline {
-    padding-left: 35px;
-    padding-right: 25px;
+    width: 1150px;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .tagline__text {
+    margin-top: -6px;
+    line-height: 29px;
+    padding-left: 225px;
+    padding-right: 125px;
   }
 }

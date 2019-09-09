@@ -55,6 +55,15 @@
   border-color: rgba(68, 68, 68, $opacity-active);
 }
 
+// .interior-radio:focus ~ label[for="interior"] {
+//   color: #62d1ba;
+// }
+//
+// .toy-radio:focus ~ label[for="toy"] {
+//   color: #62d1ba;
+// }
+
+
 @media (min-width: $tablet-width) {
   .form-color-input {
     margin-left: 90px;

@@ -16,12 +16,13 @@
     width: 768px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 66px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .video {
     width: 1150px;
-    margin-bottom: 45px;
+    margin-bottom: 36px;
   }
 }
