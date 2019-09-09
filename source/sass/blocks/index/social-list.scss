@@ -1,7 +1,34 @@
 .social-list__item {
-  padding-right: 40px;
+  padding-right: 4px;
 }
 
 .social-list__item:last-of-type {
   padding-right: 0;
+}
+
+.social-list__item-link--twitter svg {
+  width: 24px;
+  height: 21px;
+}
+
+.social-list__item-link--instagram svg {
+  width: 22px;
+  height: 21px;
+}
+
+.social-list__item-link--facebook svg {
+  width: 14px;
+  height: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list__item {
+    padding-right: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list__item {
+    padding-right: 5px;
+  }
 }

@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icon-checkbox-off</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icon-checkbox-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" stroke="#444444" stroke-width="2" x="1" y="1" width="38" height="38"></rect>
-    </g>
-</svg>
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><path stroke="#444" stroke-width="2" d="M1 1h38v38H1z" fill="none"/></svg>

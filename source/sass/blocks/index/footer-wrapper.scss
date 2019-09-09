@@ -10,3 +10,18 @@
   background-color: #f1f1f1;
   border-top: 1px solid #ececec;
 }
+
+
+@media (min-width: $tablet-width) {
+  .footer-wrapper {
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+}

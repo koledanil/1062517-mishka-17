@@ -1,4 +1,12 @@
 .menu-toggle {
+  width: 79px;
+  height: 79px;
+  // background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
   display: none;
 }
 
@@ -6,7 +14,7 @@
   display: block;
 }
 
-.menu-toggle:checked ~ .menu-checkbox::before {
+.menu-toggle:checked ~ .menu__checkbox::before {
   background-image: url("../img/icon-menu-close.svg");
   width: 21px;
   height: 21px;
@@ -17,3 +25,4 @@
     display: none;
   }
 }
+

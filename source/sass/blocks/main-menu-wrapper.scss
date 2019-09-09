@@ -6,6 +6,20 @@
   margin-right: auto;
 }
 
+@media (min-width: $tablet-width) {
+  .main-menu-wrapper {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-menu-wrapper {
     width: 1150px;
