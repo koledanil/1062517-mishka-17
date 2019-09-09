@@ -8,6 +8,10 @@
   <title>Мишка — товары ручной работы для дома</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff">
+  <link rel="preload" href="img/icon-menu-close.svg" as="image" type="image/svg+xml">
+  <link rel="preload" href="img/icon-menu-open.svg" as="image" type="image/svg+xml">
 </head>
 
 <body class="page">
@@ -169,7 +173,8 @@
               </picture>
             </a>
           </div>
-          <input class="menu-toggle" type="checkbox" name="button_menu" id="button_menu" value=""><label class="menu-checkbox" for="button_menu"><span class="visually-hidden">Открыть меню</span></label>
+          <input class="menu-toggle" type="checkbox" name="button_menu" id="button_menu" value="">
+          <label class="menu-checkbox" for="button_menu"><span class="visually-hidden">Открыть меню</span></label>
 
 
           <ul class="menu-functional sub-menu menu-none">
@@ -200,8 +205,8 @@
       <h1 class="inner-title h1-title">Вязание на заказ</h1>
       <form class="network-form-wrapper" action="index.html" method="post">
         <div class="tagline">
-          <p class="tagline__text">Мы будем рады воплотить в жизнь ваши пожелания! <a class="link-in-text" href="index.html">Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
-              детали.</a></p>
+          <p class="tagline__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+              детали.</p>
 
           <!-- Выбор типа изделия -->
           <fieldset class="form-wrapper">
@@ -351,6 +356,6 @@
       </a>
     </div>
   </footer>
+  <script src="js/picturefill.min.js"></script>
 </body>
-<script src="js/picturefill.min.js"></script>
 </html>
