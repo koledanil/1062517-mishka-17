@@ -1,5 +1,5 @@
 .social-list__item {
-  padding-right: 15px;
+  padding-right: 4px;
 }
 
 .social-list__item:last-of-type {
@@ -19,4 +19,16 @@
 .social-list__item-link--facebook svg {
   width: 14px;
   height: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list__item {
+    padding-right: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list__item {
+    padding-right: 5px;
+  }
 }

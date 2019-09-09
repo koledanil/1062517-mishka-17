@@ -2,6 +2,7 @@
   margin-top: 85px;
   position: relative;
   line-height: 19px;
+  box-sizing: border-box;
 }
 
 .features-list__item--eco-icon,
@@ -37,11 +38,36 @@
     line-height: 22px;
     width: 330px;
   }
+
+  .about-us__feature-list li:nth-child(1) {
+    order: 1;
+  }
+
+  .about-us__feature-list li:nth-child(2) {
+    order: 3;
+  }
+
+  .about-us__feature-list li:nth-child(3) {
+    order: 5;
+  }
+
+  .about-us__feature-list li:nth-child(4) {
+    order: 2;
+  }
+
+  .about-us__feature-list li:nth-child(5) {
+    order: 4;
+  }
+
+  .about-us__feature-list li:nth-child(6) {
+    order: 5;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .features-list__item {
-    width: 250px;
+    width: 300px;
+    margin-right: 20px;
   }
 
   .features-list__item--eco-icon,

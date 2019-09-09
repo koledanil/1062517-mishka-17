@@ -2,7 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: wrap;
   box-sizing: border-box;
   flex-direction: column;
@@ -14,7 +15,7 @@
   font-size: 15px;
   margin-bottom: 54px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
 }
 
 .button-form__note {
@@ -53,10 +54,15 @@
 @media (min-width: $desktop-width) {
   .button-form {
     width: 1150px;
-    margin-left: 210px;
+    padding-left: 185px;
+    padding-right: 175px;
+    justify-content: space-around;
+    margin-bottom: 3px;
   }
 
-  .button-form__note {
-    padding-right: 206px;
+  .button-form__buy {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    margin-bottom: 43px;
   }
 }

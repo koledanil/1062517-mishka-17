@@ -12,6 +12,15 @@
   position: relative;
 }
 
+.hot::before {
+  content: "";
+  height: 6px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: -6px;
+}
+
 .hot__title {
   margin-bottom: 0;
   margin-top: 0;
@@ -43,6 +52,11 @@
     padding-right: 50px;
   }
 
+  .hot::before {
+    width: 0;
+    height: 0;
+  }
+
   .hot__wrapper {
     display: flex;
     width: 768px;
@@ -59,7 +73,7 @@
   }
 
   .hot__subtitle {
-    width: 15%;
+    width: 18%;
     box-sizing: border-box;
     text-align: center;
     line-height: 18px;
@@ -128,7 +142,6 @@
 
   .hot__product-price {
     margin-top: 110px;
-    background-color: red;
     display: flex;
     width: 290px;
     margin-left: 175px;

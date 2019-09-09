@@ -1,14 +1,16 @@
 .contacts__table {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .contacts-table__cell {
-  padding-bottom: 25px;
+  padding-bottom: 32px;
   vertical-align: top;
 }
 
 .contacts-table__cell--left-padding {
-  padding-left: 15px;
+  padding-left: 25px;
+  width: 100px;
+  line-height: 27px;
 }
 
 .contacts-table__emalil-link {
@@ -19,6 +21,12 @@
 
 
 @media (min-width: $tablet-width) {
+  .contacts-table__cell--left-padding {
+    padding-left: 25px;
+    width: 220px;
+    line-height: 27px;
+  }
+
   .contacts tbody {
     width: 665px;
     margin: 0;
@@ -27,7 +35,7 @@
   }
 
   .contacts-table {
-    margin-bottom: 45px;
+    margin-bottom: 28px;
   }
 
   .contacts-table tr:nth-child(1) {
@@ -38,12 +46,16 @@
 @media (min-width: $desktop-width) {
   .contacts tbody {
     width: 340px;
-    margin-left: 177px;
+    margin-left: 170px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .contacts__table:last-child {
     margin-bottom: 100px;
+  }
+
+  .contacts-table__cell {
+    padding-bottom: 30px;
   }
 }

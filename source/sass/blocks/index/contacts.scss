@@ -8,12 +8,14 @@
 }
 
 .contacts__wrapper {
-  padding-left: 42px;
-  padding-right: 40px;
+  padding-left: 52px;
+  padding-right: 42px;
 }
 
 .contacts__title {
   margin-top: 0;
+  font-size: 17px;
+  margin-bottom: 25px;
 }
 
 .contacts__map {
@@ -84,8 +86,9 @@
 
   .contacts__title {
     font-size: 53px;
-    padding-left: 167px;
-    margin-top: 80px;
+    padding-left: 169px;
+    margin-top: 82px;
+    margin-bottom: 59px;
   }
 
   .contacts__wrapper {
@@ -103,7 +106,8 @@
   .contacts__button {
     position: absolute;
     bottom: -59px;
-    margin-left: 228px;
+    left: 222px;
+
     background-color: white;
   }
 
