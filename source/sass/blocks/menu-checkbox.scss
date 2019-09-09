@@ -1,0 +1,25 @@
+.menu-checkbox {
+  display: flex;
+  width: 79px;
+  height: 79px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.menu-checkbox::before {
+  content: "";
+  background-image: url("../img/icon-menu-open.svg");
+  width: 19px;
+  height: 14px;
+  transition: all 0.1s ease-out;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-checkbox {
+    display: none;
+  }
+}
