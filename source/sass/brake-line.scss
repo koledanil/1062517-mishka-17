@@ -1,3 +1,7 @@
+.brake-line--review {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .brake-line {
     margin: 0;
@@ -13,7 +17,11 @@
 @media (min-width: $desktop-width) {
   .brake-line svg {
     width: 1050px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .brake-line--review svg {
+    margin-top: 0;
   }
 }

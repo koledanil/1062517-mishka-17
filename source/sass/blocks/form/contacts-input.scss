@@ -1,35 +1,43 @@
 .contacts-input {
-  height: 40px;
+  height: 44px;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 2px solid #000000;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   width: 100%;
   background-color: transparent;
+  font-size: 16px;
 }
 
+.contacts-input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
 
 @media (min-width: $tablet-width) {
   .contacts-input {
-    width: 360px;
+    margin-left: 20px;
+    width: 377px;
     display: flex;
+    margin-bottom: 30px;
+    font-size: 16px;
   }
 
   .contacts-input--long {
-    margin-left: 100px;
-    width: 460px;
+    margin-left: 68px;
+    width: 498px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts-input {
-    width: 648px;
+    width: 583px;
     display: flex;
   }
 
   .contacts-input--long {
-    margin-left: 100px;
-    width: 750px;
+    margin-left: 75px;
+    width: 698px;
   }
 }

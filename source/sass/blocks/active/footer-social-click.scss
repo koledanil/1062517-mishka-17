@@ -1,3 +1,7 @@
+.footer-social-click {
+  padding: 20px;
+}
+
 .footer-social-click:hover {
   fill: #62d1ba;
   opacity: $opacity-hover;
@@ -5,4 +9,5 @@
 
 .footer-social-click:active {
   fill: #62d1ba;
+  opacity: $opacity-active;
 }

@@ -1,0 +1,22 @@
+.menu-delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-delivery {
+    display: block;
+    order: 4;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-delivery {
+    display: block;
+    font-size: 15px;
+    padding-top: 6px;
+    padding-bottom: 20px;
+    order: 5;
+  }
+}

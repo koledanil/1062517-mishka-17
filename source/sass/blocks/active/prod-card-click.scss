@@ -1,3 +1,7 @@
+.prod-card-click {
+  transition: all 0.2s ease-in;
+}
+
 .prod-card-click:hover {
   box-shadow: $shadow_card_video--hover;
 }

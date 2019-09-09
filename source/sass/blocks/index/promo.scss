@@ -8,13 +8,22 @@
 }
 
 .promo__wrapper {
-  background-image: url("../img/hero-mobile@1x.jpg");
+  background-image:
+    url("../img/hero-mobile@1x.jpg"),
+    url("../img/webp/hero-mobile@1x.webp");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -19px;
   height: 373px;
   width: 320px;
   position: relative;
   margin-bottom: 114px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/hero-mobile@2x.jpg"),
+      url("../img/webp/hero-mobile@2x.webp");
+    background-size: 575px 373px;
+  }
 }
 
 .promo__list {
@@ -23,7 +32,7 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top: 110px;
+  margin-top: 127px;
   position: relative;
 }
 
@@ -72,8 +81,8 @@ a.promo__list-link {
   line-height: 24px;
   width: 90%;
   padding-left: 30px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 21px;
+  padding-bottom: 31px;
 }
 
 .promo__list-link--light-icon::after {
@@ -102,7 +111,7 @@ a.promo__list-link {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 72px;
   margin-left: 35px;
   margin-right: 35px;
   padding: 0;
@@ -119,18 +128,28 @@ a.promo__list-link {
   .promo__wrapper {
     width: 100%;
     background-color: #fafafa;
-    background-image: url("../img/hero-tablet@1x.jpg");
-    height: 746px;
+    background-image:
+      url("../img/hero-tablet@1x.jpg"),
+      url("../img/webp/hero-tablet@1x.webp");
+    background-size: 1150px 746px;
+    background-position: center 27px;
+    height: 770px;
     margin: 0;
     padding: 0;
     margin-top: 60px;
     position: relative;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/hero-tablet@2x.jpg"),
+        url("../img/webp/hero-tablet@2x.webp");
+    }
   }
 
   .promo__list {
     width: 100%;
     justify-content: center;
-    margin-top: 349px;
+    margin-top: 370px;
   }
 
   .promo__list::after {
@@ -139,9 +158,16 @@ a.promo__list-link {
     position: absolute;
     width: 100%;
     height: 20px;
-    bottom: 0;
+    bottom: 5px;
+    left: 0;
   }
 
+  a.promo__list-link {
+    padding-left: 35px;
+    padding-top: 26px;
+    line-height: 27px;
+    padding-bottom: 31px;
+  }
 
   .promo__list-item {
     width: 334px;
@@ -151,13 +177,13 @@ a.promo__list-link {
   }
 
   .promo__list-link--light-icon::after {
-    right: 0;
-    bottom: 28px;
+    left: 260px;
+    bottom: 34px;
   }
 
   .promo__list-link--block-icon::after {
-    right: 0;
-    bottom: 28px;
+    left: 240px;
+    bottom: 34px;
   }
 
 
@@ -172,18 +198,50 @@ a.promo__list-link {
   }
 
   .promo__title {
-    font-size: 53px;
-    line-height: 66px;
-    margin-top: 145px;
+    font-size: 43px;
+    line-height: 51px;
+    margin-top: 180px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__list {
+    margin-top: 359px;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .promo__wrapper {
+    background-image:
+      url("../img/hero-desktop@1x.jpg"),
+      url("../img/webp/hero-desktop@1x.webp");
+    background-repeat: no-repeat;
+    background-position: center 27px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/hero-desktop@2x.jpg"),
+        url("../img/webp/hero-desktop@2x.webp");
+    }
+  }
+
+  a.promo__list-link {
+    padding-left: 35px;
+    padding-top: 22px;
+    line-height: 27px;
+    padding-bottom: 31px;
+  }
+
+  .promo__list::after {
+    bottom: 8px;
+  }
+
+  .promo__title {
+    font-size: 53px;
+    line-height: 56px;
+    margin-top: 184px;
   }
 
   .promo__list-item {
@@ -192,12 +250,12 @@ a.promo__list-link {
   }
 
   .promo__list-link--light-icon::after {
-    top: 25px;
-    left: 440px;
+    top: 30px;
+    left: 450px;
   }
 
   .promo__list-link--block-icon::after {
-    top: 25px;
+    top: 30px;
     left: 430px;
   }
 }

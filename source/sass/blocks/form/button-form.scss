@@ -2,7 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: wrap;
   box-sizing: border-box;
   flex-direction: column;
@@ -11,12 +12,15 @@
 .button-form__buy {
   width: 100%;
   background-color: white;
-  margin-bottom: 23px;
+  font-size: 15px;
+  margin-bottom: 54px;
+  padding-top: 15px;
+  padding-bottom: 18px;
 }
 
 .button-form__note {
-  margin-top: 10px;
-  margin-bottom: 22px;
+  margin-top: 5px;
+  margin-bottom: 26px;
   font-size: 13px;
   color: #444444;
 }
@@ -42,6 +46,7 @@
     width: 50%;
     text-align: right;
     padding-right: 7px;
+    font-size: 16px;
   }
 }
 
@@ -49,10 +54,15 @@
 @media (min-width: $desktop-width) {
   .button-form {
     width: 1150px;
-    padding-left: 250px;
+    padding-left: 185px;
+    padding-right: 175px;
+    justify-content: space-around;
+    margin-bottom: 3px;
   }
 
-  .button-form__note {
-    padding-right: 96px;
+  .button-form__buy {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    margin-bottom: 43px;
   }
 }
