@@ -9,5 +9,5 @@
 node_modules/
 npm-debug.*
 Thumbs.db
-build/
+build
 build/css
