@@ -12,8 +12,8 @@
 
   &::before {
     content: "";
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: 2px solid #444444;
     position: absolute;
     cursor: pointer;
@@ -31,6 +31,9 @@
 .pink-checkbox:checked ~ label[for="pink-id"]::before,
 .orange-checkbox:checked ~ label[for="orange-id"]::before {
   background-image: url("../img/icon-checkbox-on.svg");
+  background-size: 30px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
   border-color: #444444;
 }
 
@@ -52,26 +55,55 @@
   border-color: rgba(68, 68, 68, $opacity-active);
 }
 
+// .interior-radio:focus ~ label[for="interior"] {
+//   color: #62d1ba;
+// }
+//
+// .toy-radio:focus ~ label[for="toy"] {
+//   color: #62d1ba;
+// }
+
+
 @media (min-width: $tablet-width) {
   .form-color-input {
-    margin-left: 100px;
+    margin-left: 90px;
     width: 460px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
   }
 
+  .white-checkbox:checked ~ label[for="white-id"]::before,
+  .grey-checkbox:checked ~ label[for="grey-id"]::before,
+  .tiffany-checkbox:checked ~ label[for="tiffany-id"]::before,
+  .black-checkbox:checked ~ label[for="black-id"]::before,
+  .pink-checkbox:checked ~ label[for="pink-id"]::before,
+  .orange-checkbox:checked ~ label[for="orange-id"]::before {
+    background-size: 40px 40px;
+  }
+
   .form-color-input__label {
     width: 150px;
+    margin-bottom: 15px;
+    font-size: 18px;
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      left: -78px;
+      top: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-color-input {
-    width: 800px;
+    width: 700px;
   }
 
   .form-color-input__label {
-    width: 150px;
+    width: 100px;
+    margin-right: 16px;
   }
 }

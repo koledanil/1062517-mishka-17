@@ -1,5 +1,6 @@
 .hot-container__text {
-  margin-bottom: 27px;
+  margin-top: 22px;
+  margin-bottom: 17px;
   padding: 0;
   letter-spacing: -0.2px;
 }
@@ -13,6 +14,7 @@
   .hot-container__text {
     width: 290px;
     position: relative;
+    margin-bottom: 45px;
   }
 }
 
@@ -24,6 +26,8 @@
   }
 
   .hot-container__text {
+    margin-top: 15px;
+    line-height: 30px;
     width: 290px;
     margin-left: 175px;
   }

@@ -1,13 +1,45 @@
 //Делает радио выдел.
 .toy-radio:checked ~ label[for="toy"]::before {
-  box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #444444;
+  box-shadow: 0 0 0 4px white, 0 0 0 8px white, 0 0 0 10px #444444;
   background-color: #62d1ba;
 }
 
-.toy-radio:active ~ label[for="toy"]::before {
-  box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px rgba(68, 68, 68, $opacity-active);
-}
 
 .toy-radio:hover ~ label[for="toy"]::before {
-  box-shadow: 0 0 0 8px white, 0 0 0 2px white, 0 0 0 10px #62d1ba;
+  box-shadow: 0 0 0 4px white, 0 0 0 8px white, 0 0 0 10px #62d1ba;
+}
+
+.toy-radio:active ~ label[for="toy"]::before {
+  box-shadow: 0 0 0 4px white, 0 0 0 8px white, 0 0 0 10px rgba(68, 68, 68, $opacity-active);
+}
+
+@media (min-width: $tablet-width) {
+  .toy-radio:checked ~ label[for="toy"]::before {
+    box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px #444444;
+    background-color: #62d1ba;
+  }
+
+
+  .toy-radio:hover ~ label[for="toy"]::before {
+    box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px #62d1ba;
+  }
+
+  .toy-radio:active ~ label[for="toy"]::before {
+    box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px rgba(68, 68, 68, $opacity-active);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .toy-radio:checked ~ label[for="toy"]::before {
+    box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px #444444;
+    background-color: #62d1ba;
+  }
+
+  .toy-radio:hover ~ label[for="toy"]::before {
+    box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px #62d1ba;
+  }
+
+  .toy-radio:active ~ label[for="toy"]::before {
+    box-shadow: 0 0 0 8px white, 0 0 0 14px white, 0 0 0 16px rgba(68, 68, 68, $opacity-active);
+  }
 }
