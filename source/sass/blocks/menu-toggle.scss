@@ -14,7 +14,7 @@
   display: block;
 }
 
-.menu-toggle:checked ~ .menu__checkbox::before {
+.menu-toggle:checked ~ .menu-checkbox::before {
   background-image: url("../img/icon-menu-close.svg");
   width: 21px;
   height: 21px;
@@ -25,4 +25,3 @@
     display: none;
   }
 }
-
